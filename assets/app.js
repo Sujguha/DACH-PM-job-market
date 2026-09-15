@@ -22,8 +22,12 @@ const ROLE_COLORS = {
   "Release Train Engineer": "#9C755F",
   "Portfolio Manager": "#BAB0AC",
   "Transformation Manager": "#86BCB6",
+  "Product Owner": "#499894",
+  "Product Manager": "#D37295",
+  "Quality Manager": "#A0CBE8",
+  "Quality Engineer": "#FFBE7D",
 };
-const FALLBACK_PALETTE = ["#4E79A7","#F28E2B","#E15759","#76B7B2","#59A14F","#EDC948","#B07AA1","#FF9DA7","#9C755F","#BAB0AC","#86BCB6"];
+const FALLBACK_PALETTE = ["#4E79A7","#F28E2B","#E15759","#76B7B2","#59A14F","#EDC948","#B07AA1","#FF9DA7","#9C755F","#BAB0AC","#86BCB6","#499894","#D37295","#A0CBE8","#FFBE7D"];
 
 function colorForRole(role) {
   return ROLE_COLORS[role] || COLORS.signal;
@@ -266,6 +270,7 @@ function setupPostingsStage(data) {
   const countrySelect = document.getElementById("post-country");
   const citySelect = document.getElementById("post-city");
   const levelSelect = document.getElementById("post-level");
+  const jobTypeSelect = document.getElementById("post-jobtype");
   const sortSelect = document.getElementById("post-sort");
   const clearBtn = document.getElementById("post-clear");
 
@@ -287,6 +292,7 @@ function setupPostingsStage(data) {
       country: countrySelect.value,
       city: citySelect.value,
       level: levelSelect.value,
+      jobType: jobTypeSelect.value,
       sort: sortSelect.value,
     };
   }
@@ -298,6 +304,7 @@ function setupPostingsStage(data) {
       if (f.country !== "__all__" && p.country !== f.country) return false;
       if (f.city !== "__all__" && p.city !== f.city) return false;
       if (f.level !== "__all__" && p.level !== f.level) return false;
+      if (f.jobType !== "__all__" && p.job_type !== f.jobType) return false;
       return true;
     });
     if (f.sort === "newest") list = list.slice().sort((a, b) => (b.created || "").localeCompare(a.created || ""));
@@ -326,6 +333,7 @@ function setupPostingsStage(data) {
         <td>${p.city}, ${p.country_code?.toUpperCase() || ""}</td>
         <td class="role-cell"><span class="role-dot" style="background:${colorForRole(p.role)}"></span>${p.role}</td>
         <td>${p.level || "—"}</td>
+        <td>${p.job_type || "—"}</td>
         <td class="num" style="color:${daysColor(p.days_open)}">${p.days_open ?? "—"}</td>
       </tr>`)
       .join("");
@@ -351,7 +359,7 @@ function setupPostingsStage(data) {
     });
   }
 
-  [roleSelect, countrySelect, citySelect, levelSelect, sortSelect].forEach((el) =>
+  [roleSelect, countrySelect, citySelect, levelSelect, jobTypeSelect, sortSelect].forEach((el) =>
     el.addEventListener("change", () => {
       postingsPage = 1;
       renderPage();
@@ -363,6 +371,7 @@ function setupPostingsStage(data) {
     countrySelect.value = "__all__";
     citySelect.value = "__all__";
     levelSelect.value = "__all__";
+    jobTypeSelect.value = "__all__";
     sortSelect.value = "newest";
     postingsPage = 1;
     renderPage();

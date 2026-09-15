@@ -1,10 +1,14 @@
 [
   {
-    "company": "SAP",
+    "company": "Roche",
     "count": 34
   },
   {
-    "company": "Continental",
+    "company": "BMW Group",
+    "count": 32
+  },
+  {
+    "company": "Allianz",
     "count": 31
   },
   {
@@ -12,71 +16,67 @@
     "count": 30
   },
   {
-    "company": "UBS",
+    "company": "Continental",
     "count": 29
   },
   {
-    "company": "Munich Re",
-    "count": 29
-  },
-  {
-    "company": "Bertelsmann",
-    "count": 29
-  },
-  {
-    "company": "BMW Group",
+    "company": "T-Systems",
     "count": 28
   },
   {
-    "company": "OMV",
+    "company": "Munich Re",
+    "count": 28
+  },
+  {
+    "company": "UBS",
+    "count": 28
+  },
+  {
+    "company": "SAP",
     "count": 27
   },
   {
-    "company": "Allianz",
+    "company": "Fiserv",
+    "count": 27
+  },
+  {
+    "company": "Bertelsmann",
     "count": 26
   },
   {
-    "company": "Sopra Steria",
-    "count": 26
-  },
-  {
-    "company": "Erste Group",
+    "company": "Siemens",
     "count": 25
-  },
-  {
-    "company": "Nestle",
-    "count": 25
-  },
-  {
-    "company": "Roche",
-    "count": 24
   },
   {
     "company": "Voith",
     "count": 24
   },
   {
-    "company": "Bosch",
-    "count": 22
+    "company": "OMV",
+    "count": 24
   },
   {
-    "company": "Fiserv",
-    "count": 22
+    "company": "Erste Group",
+    "count": 23
   },
   {
     "company": "Deutsche Bank",
+    "count": 22
+  },
+  {
+    "company": "Sopra Steria",
+    "count": 22
+  },
+  {
+    "company": "Bosch",
     "count": 21
   },
   {
-    "company": "Siemens",
+    "company": "Capgemini",
     "count": 20
   },
   {
-    "company": "Capgemini",
-    "count": 19
-  },
-  {
-    "company": "T-Systems",
-    "count": 17
+    "company": "Nestle",
+    "count": 18
   }
 ]

@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-09-15T12:52:50Z",
-  "total_postings": 508,
+  "last_updated": "2026-09-15T19:29:07Z",
+  "total_postings": 519,
   "by_country": {
-    "Germany": 306,
-    "Austria": 89,
-    "Switzerland": 113
+    "Germany": 261,
+    "Austria": 90,
+    "Switzerland": 168
   },
   "roles_tracked": [
     "Program Manager",
@@ -17,7 +17,11 @@
     "Scrum Master",
     "Release Train Engineer",
     "Portfolio Manager",
-    "Transformation Manager"
+    "Transformation Manager",
+    "Product Owner",
+    "Product Manager",
+    "Quality Manager",
+    "Quality Engineer"
   ],
   "is_sample_data": true
 }

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Release Radar — DACH Program &amp; Release Management Job Pipeline</title>
-<meta name="description" content="Daily-tracked demand for Program, Release, PMO and Delivery Management roles across Germany, Austria and Switzerland.">
+<meta name="description" content="Daily-tracked demand for Program, Release, Product, PMO, Delivery and Quality Management roles across Germany, Austria and Switzerland.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -59,7 +59,7 @@
     <!-- STAGE 1: OVERVIEW -->
     <section id="stage-overview" class="stage active">
       <h1>How live is the DACH PM / release-management market?</h1>
-      <p class="lede">Every day, postings for program, release, PMO, delivery, change and agile-leadership roles across Germany, Austria and Switzerland are pulled from Adzuna and re-aggregated here.</p>
+      <p class="lede">Every day, postings for program, release, product, PMO, delivery, quality, change and agile-leadership roles across Germany, Austria and Switzerland are pulled from Adzuna and re-aggregated here.</p>
 
       <div class="cards" id="summary-cards">
         <div class="card"><span class="card-value" id="stat-total">—</span><span class="card-label">postings tracked</span></div>
@@ -119,6 +119,15 @@
           </select>
         </div>
         <div>
+          <label for="post-jobtype">Job type</label>
+          <select id="post-jobtype">
+            <option value="__all__">All job types</option>
+            <option value="Full time">Full time</option>
+            <option value="Part time">Part time</option>
+            <option value="Contract">Contract</option>
+          </select>
+        </div>
+        <div>
           <label for="post-sort">Sort</label>
           <select id="post-sort">
             <option value="newest">Newest first</option>
@@ -141,6 +150,7 @@
               <th>City</th>
               <th>Role</th>
               <th>Level</th>
+              <th>Job type</th>
               <th class="num">Days open</th>
             </tr>
           </thead>

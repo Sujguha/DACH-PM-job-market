@@ -1,90 +1,90 @@
 [
   {
-    "city": "Hamburg",
-    "country": "Germany",
-    "count": 70,
-    "avg_days_open": 38.9,
-    "lat": 53.5563,
-    "lon": 9.998
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "count": 64,
-    "avg_days_open": 41.2,
-    "lat": 48.7335,
-    "lon": 9.2173
-  },
-  {
     "city": "Basel",
     "country": "Switzerland",
-    "count": 61,
-    "avg_days_open": 35.4,
-    "lat": 47.5603,
-    "lon": 7.6231
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "count": 60,
-    "avg_days_open": 42.0,
-    "lat": 50.9224,
-    "lon": 7.0037
+    "count": 63,
+    "avg_days_open": 36.6,
+    "lat": 47.5202,
+    "lon": 7.6173
   },
   {
     "city": "Munich",
     "country": "Germany",
     "count": 55,
-    "avg_days_open": 38.2,
-    "lat": 48.0991,
-    "lon": 11.5422
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "count": 54,
-    "avg_days_open": 29.3,
-    "lat": 47.0777,
-    "lon": 15.4427
-  },
-  {
-    "city": "Vienna",
-    "country": "Austria",
-    "count": 35,
-    "avg_days_open": 47.1,
-    "lat": 48.1942,
-    "lon": 16.3508
-  },
-  {
-    "city": "Zurich",
-    "country": "Switzerland",
-    "count": 35,
-    "avg_days_open": 40.9,
-    "lat": 47.3488,
-    "lon": 8.5813
-  },
-  {
-    "city": "Berlin",
-    "country": "Germany",
-    "count": 34,
-    "avg_days_open": 39.2,
-    "lat": 52.5355,
-    "lon": 13.4015
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "count": 23,
-    "avg_days_open": 36.0,
-    "lat": 50.1306,
-    "lon": 8.6447
+    "avg_days_open": 37.6,
+    "lat": 48.1528,
+    "lon": 11.6212
   },
   {
     "city": "Geneva",
     "country": "Switzerland",
-    "count": 17,
-    "avg_days_open": 36.3,
-    "lat": 46.194,
-    "lon": 6.1811
+    "count": 54,
+    "avg_days_open": 31.9,
+    "lat": 46.1549,
+    "lon": 6.1466
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "count": 51,
+    "avg_days_open": 32.7,
+    "lat": 48.1793,
+    "lon": 16.4106
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "count": 51,
+    "avg_days_open": 37.7,
+    "lat": 47.3506,
+    "lon": 8.5235
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "count": 48,
+    "avg_days_open": 38.6,
+    "lat": 53.5215,
+    "lon": 10.0382
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "count": 43,
+    "avg_days_open": 38.8,
+    "lat": 52.5327,
+    "lon": 13.3825
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "count": 43,
+    "avg_days_open": 35.7,
+    "lat": 50.1064,
+    "lon": 8.6643
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "count": 39,
+    "avg_days_open": 32.9,
+    "lat": 47.0738,
+    "lon": 15.3903
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "count": 38,
+    "avg_days_open": 32.2,
+    "lat": 48.7567,
+    "lon": 9.2329
+  },
+  {
+    "city": "Cologne",
+    "country": "Germany",
+    "count": 34,
+    "avg_days_open": 36.9,
+    "lat": 50.8937,
+    "lon": 6.9221
   }
 ]

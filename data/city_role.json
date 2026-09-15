@@ -4,790 +4,1042 @@
     "country": "Germany",
     "role": "Program Manager",
     "count": 9,
-    "avg_days_open": 42.8
-  },
-  {
-    "city": "Munich",
-    "country": "Germany",
-    "role": "Delivery Manager",
-    "count": 9,
-    "avg_days_open": 22.7
-  },
-  {
-    "city": "Munich",
-    "country": "Germany",
-    "role": "Change Manager",
-    "count": 5,
-    "avg_days_open": 49.4
+    "avg_days_open": 34.9
   },
   {
     "city": "Munich",
     "country": "Germany",
     "role": "Project Manager",
-    "count": 8,
-    "avg_days_open": 43.9
+    "count": 5,
+    "avg_days_open": 46.4
   },
   {
     "city": "Munich",
     "country": "Germany",
-    "role": "Transformation Manager",
-    "count": 3,
-    "avg_days_open": 37.3
+    "role": "Release Manager",
+    "count": 6,
+    "avg_days_open": 31.8
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "role": "Quality Manager",
+    "count": 2,
+    "avg_days_open": 17.0
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "role": "Change Manager",
+    "count": 4,
+    "avg_days_open": 57.8
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "role": "Delivery Manager",
+    "count": 2,
+    "avg_days_open": 26.0
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "role": "Scrum Master",
+    "count": 1,
+    "avg_days_open": 59.0
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "role": "Portfolio Manager",
+    "count": 4,
+    "avg_days_open": 43.0
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "role": "Product Manager",
+    "count": 5,
+    "avg_days_open": 34.6
   },
   {
     "city": "Munich",
     "country": "Germany",
     "role": "PMO",
+    "count": 6,
+    "avg_days_open": 41.8
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "role": "Quality Engineer",
+    "count": 3,
+    "avg_days_open": 13.3
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "role": "Product Owner",
+    "count": 5,
+    "avg_days_open": 28.0
+  },
+  {
+    "city": "Munich",
+    "country": "Germany",
+    "role": "Release Train Engineer",
+    "count": 3,
+    "avg_days_open": 59.3
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "PMO",
+    "count": 5,
+    "avg_days_open": 37.2
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Release Manager",
+    "count": 4,
+    "avg_days_open": 51.2
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Program Manager",
+    "count": 3,
+    "avg_days_open": 40.0
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Product Manager",
+    "count": 2,
+    "avg_days_open": 5.0
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Transformation Manager",
+    "count": 2,
+    "avg_days_open": 21.5
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Project Manager",
+    "count": 8,
+    "avg_days_open": 29.2
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Delivery Manager",
+    "count": 5,
+    "avg_days_open": 48.8
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Quality Manager",
+    "count": 4,
+    "avg_days_open": 30.8
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Agile Coach",
+    "count": 2,
+    "avg_days_open": 29.5
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Portfolio Manager",
+    "count": 3,
+    "avg_days_open": 45.7
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Scrum Master",
+    "count": 3,
+    "avg_days_open": 59.7
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Change Manager",
+    "count": 1,
+    "avg_days_open": 55.0
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "role": "Release Train Engineer",
+    "count": 1,
+    "avg_days_open": 74.0
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Change Manager",
+    "count": 4,
+    "avg_days_open": 36.8
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Agile Coach",
+    "count": 2,
+    "avg_days_open": 8.5
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Quality Engineer",
+    "count": 4,
+    "avg_days_open": 34.2
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Product Manager",
+    "count": 3,
+    "avg_days_open": 40.3
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Delivery Manager",
+    "count": 4,
+    "avg_days_open": 32.0
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Quality Manager",
+    "count": 1,
+    "avg_days_open": 62.0
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Transformation Manager",
+    "count": 3,
+    "avg_days_open": 35.0
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Project Manager",
+    "count": 5,
+    "avg_days_open": 41.2
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Release Manager",
+    "count": 3,
+    "avg_days_open": 31.3
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Program Manager",
+    "count": 6,
+    "avg_days_open": 39.5
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Scrum Master",
+    "count": 3,
+    "avg_days_open": 46.7
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Product Owner",
+    "count": 1,
+    "avg_days_open": 16.0
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Release Train Engineer",
+    "count": 1,
+    "avg_days_open": 71.0
+  },
+  {
+    "city": "Frankfurt",
+    "country": "Germany",
+    "role": "Portfolio Manager",
     "count": 2,
     "avg_days_open": 20.0
   },
   {
-    "city": "Munich",
+    "city": "Frankfurt",
     "country": "Germany",
-    "role": "Scrum Master",
-    "count": 3,
-    "avg_days_open": 29.3
+    "role": "PMO",
+    "count": 1,
+    "avg_days_open": 14.0
   },
   {
-    "city": "Munich",
-    "country": "Germany",
-    "role": "Release Manager",
-    "count": 8,
-    "avg_days_open": 51.1
-  },
-  {
-    "city": "Munich",
-    "country": "Germany",
-    "role": "Portfolio Manager",
-    "count": 4,
-    "avg_days_open": 27.0
-  },
-  {
-    "city": "Munich",
+    "city": "Hamburg",
     "country": "Germany",
     "role": "Release Train Engineer",
-    "count": 2,
-    "avg_days_open": 37.5
+    "count": 3,
+    "avg_days_open": 33.7
   },
   {
-    "city": "Munich",
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "PMO",
+    "count": 2,
+    "avg_days_open": 55.5
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Change Manager",
+    "count": 4,
+    "avg_days_open": 46.2
+  },
+  {
+    "city": "Hamburg",
     "country": "Germany",
     "role": "Agile Coach",
     "count": 2,
-    "avg_days_open": 42.0
+    "avg_days_open": 50.5
   },
   {
-    "city": "Berlin",
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Product Owner",
+    "count": 6,
+    "avg_days_open": 43.8
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Project Manager",
+    "count": 4,
+    "avg_days_open": 46.5
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Scrum Master",
+    "count": 3,
+    "avg_days_open": 27.0
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Portfolio Manager",
+    "count": 2,
+    "avg_days_open": 39.5
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Program Manager",
+    "count": 6,
+    "avg_days_open": 30.3
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Product Manager",
+    "count": 4,
+    "avg_days_open": 49.8
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Quality Engineer",
+    "count": 2,
+    "avg_days_open": 6.0
+  },
+  {
+    "city": "Hamburg",
     "country": "Germany",
     "role": "Release Manager",
     "count": 2,
-    "avg_days_open": 41.5
+    "avg_days_open": 34.0
   },
   {
-    "city": "Berlin",
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Transformation Manager",
+    "count": 3,
+    "avg_days_open": 27.7
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Delivery Manager",
+    "count": 3,
+    "avg_days_open": 25.7
+  },
+  {
+    "city": "Hamburg",
+    "country": "Germany",
+    "role": "Quality Manager",
+    "count": 2,
+    "avg_days_open": 62.5
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Delivery Manager",
+    "count": 7,
+    "avg_days_open": 27.9
+  },
+  {
+    "city": "Stuttgart",
     "country": "Germany",
     "role": "Project Manager",
-    "count": 9,
+    "count": 3,
+    "avg_days_open": 35.7
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Release Manager",
+    "count": 6,
+    "avg_days_open": 39.3
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Product Owner",
+    "count": 2,
+    "avg_days_open": 28.5
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Product Manager",
+    "count": 4,
+    "avg_days_open": 27.8
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Release Train Engineer",
+    "count": 3,
+    "avg_days_open": 10.3
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "PMO",
+    "count": 2,
+    "avg_days_open": 60.5
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Agile Coach",
+    "count": 4,
+    "avg_days_open": 40.2
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Quality Engineer",
+    "count": 2,
+    "avg_days_open": 3.0
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Change Manager",
+    "count": 1,
     "avg_days_open": 33.0
   },
   {
-    "city": "Berlin",
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Portfolio Manager",
+    "count": 2,
+    "avg_days_open": 60.5
+  },
+  {
+    "city": "Stuttgart",
+    "country": "Germany",
+    "role": "Quality Manager",
+    "count": 1,
+    "avg_days_open": 27.0
+  },
+  {
+    "city": "Stuttgart",
     "country": "Germany",
     "role": "Program Manager",
+    "count": 1,
+    "avg_days_open": 17.0
+  },
+  {
+    "city": "Cologne",
+    "country": "Germany",
+    "role": "Agile Coach",
     "count": 3,
-    "avg_days_open": 22.7
+    "avg_days_open": 31.0
   },
   {
-    "city": "Berlin",
+    "city": "Cologne",
     "country": "Germany",
-    "role": "Delivery Manager",
-    "count": 4,
-    "avg_days_open": 48.0
-  },
-  {
-    "city": "Berlin",
-    "country": "Germany",
-    "role": "Release Train Engineer",
+    "role": "Project Manager",
     "count": 4,
     "avg_days_open": 39.5
   },
   {
-    "city": "Berlin",
-    "country": "Germany",
-    "role": "PMO",
-    "count": 3,
-    "avg_days_open": 47.0
-  },
-  {
-    "city": "Berlin",
-    "country": "Germany",
-    "role": "Portfolio Manager",
-    "count": 2,
-    "avg_days_open": 74.0
-  },
-  {
-    "city": "Berlin",
-    "country": "Germany",
-    "role": "Scrum Master",
-    "count": 2,
-    "avg_days_open": 36.5
-  },
-  {
-    "city": "Berlin",
-    "country": "Germany",
-    "role": "Transformation Manager",
-    "count": 3,
-    "avg_days_open": 12.3
-  },
-  {
-    "city": "Berlin",
-    "country": "Germany",
-    "role": "Change Manager",
-    "count": 2,
-    "avg_days_open": 68.0
-  },
-  {
-    "city": "Frankfurt",
+    "city": "Cologne",
     "country": "Germany",
     "role": "Release Manager",
-    "count": 3,
-    "avg_days_open": 34.0
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "role": "Release Train Engineer",
-    "count": 2,
-    "avg_days_open": 31.5
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "role": "Portfolio Manager",
-    "count": 3,
-    "avg_days_open": 14.0
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "role": "Program Manager",
-    "count": 6,
-    "avg_days_open": 38.8
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "role": "Delivery Manager",
-    "count": 3,
-    "avg_days_open": 47.7
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "role": "Transformation Manager",
-    "count": 1,
-    "avg_days_open": 34.0
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "role": "PMO",
-    "count": 1,
-    "avg_days_open": 13.0
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "role": "Scrum Master",
-    "count": 2,
-    "avg_days_open": 63.5
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "role": "Agile Coach",
-    "count": 1,
-    "avg_days_open": 6.0
-  },
-  {
-    "city": "Frankfurt",
-    "country": "Germany",
-    "role": "Project Manager",
-    "count": 1,
-    "avg_days_open": 65.0
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Program Manager",
-    "count": 10,
-    "avg_days_open": 43.0
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Release Train Engineer",
     "count": 4,
-    "avg_days_open": 46.2
+    "avg_days_open": 47.2
   },
   {
-    "city": "Hamburg",
+    "city": "Cologne",
     "country": "Germany",
-    "role": "PMO",
-    "count": 10,
-    "avg_days_open": 40.6
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Transformation Manager",
-    "count": 6,
-    "avg_days_open": 50.7
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Project Manager",
-    "count": 7,
-    "avg_days_open": 41.0
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Agile Coach",
-    "count": 6,
-    "avg_days_open": 26.3
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Delivery Manager",
-    "count": 11,
-    "avg_days_open": 29.2
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Portfolio Manager",
-    "count": 5,
-    "avg_days_open": 37.4
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Release Manager",
-    "count": 6,
-    "avg_days_open": 29.5
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Change Manager",
-    "count": 4,
-    "avg_days_open": 54.8
-  },
-  {
-    "city": "Hamburg",
-    "country": "Germany",
-    "role": "Scrum Master",
-    "count": 1,
-    "avg_days_open": 46.0
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Project Manager",
-    "count": 14,
-    "avg_days_open": 45.9
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Agile Coach",
-    "count": 2,
-    "avg_days_open": 65.5
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Delivery Manager",
-    "count": 8,
-    "avg_days_open": 38.4
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "PMO",
-    "count": 14,
-    "avg_days_open": 49.0
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Program Manager",
-    "count": 7,
-    "avg_days_open": 47.9
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Release Manager",
-    "count": 8,
-    "avg_days_open": 33.1
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Portfolio Manager",
+    "role": "Product Owner",
     "count": 3,
-    "avg_days_open": 32.3
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Scrum Master",
-    "count": 3,
-    "avg_days_open": 20.3
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Change Manager",
-    "count": 1,
-    "avg_days_open": 0.0
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Release Train Engineer",
-    "count": 3,
-    "avg_days_open": 22.0
-  },
-  {
-    "city": "Stuttgart",
-    "country": "Germany",
-    "role": "Transformation Manager",
-    "count": 1,
-    "avg_days_open": 47.0
+    "avg_days_open": 13.7
   },
   {
     "city": "Cologne",
     "country": "Germany",
-    "role": "Release Manager",
-    "count": 15,
-    "avg_days_open": 46.2
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "Program Manager",
-    "count": 6,
-    "avg_days_open": 38.5
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "Change Manager",
-    "count": 4,
-    "avg_days_open": 33.5
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "Delivery Manager",
-    "count": 5,
-    "avg_days_open": 42.6
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "PMO",
-    "count": 6,
-    "avg_days_open": 37.8
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "Project Manager",
-    "count": 10,
-    "avg_days_open": 47.8
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "Transformation Manager",
-    "count": 4,
-    "avg_days_open": 29.5
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "Release Train Engineer",
-    "count": 5,
-    "avg_days_open": 49.2
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "Agile Coach",
-    "count": 3,
-    "avg_days_open": 39.7
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "Portfolio Manager",
-    "count": 1,
-    "avg_days_open": 52.0
-  },
-  {
-    "city": "Cologne",
-    "country": "Germany",
-    "role": "Scrum Master",
-    "count": 1,
-    "avg_days_open": 10.0
-  },
-  {
-    "city": "Vienna",
-    "country": "Austria",
-    "role": "PMO",
-    "count": 5,
-    "avg_days_open": 62.2
-  },
-  {
-    "city": "Vienna",
-    "country": "Austria",
-    "role": "Release Manager",
-    "count": 10,
-    "avg_days_open": 37.4
-  },
-  {
-    "city": "Vienna",
-    "country": "Austria",
     "role": "Program Manager",
     "count": 8,
-    "avg_days_open": 45.8
+    "avg_days_open": 27.5
   },
   {
-    "city": "Vienna",
-    "country": "Austria",
-    "role": "Portfolio Manager",
+    "city": "Cologne",
+    "country": "Germany",
+    "role": "PMO",
     "count": 2,
-    "avg_days_open": 55.0
+    "avg_days_open": 40.5
   },
   {
-    "city": "Vienna",
-    "country": "Austria",
-    "role": "Change Manager",
+    "city": "Cologne",
+    "country": "Germany",
+    "role": "Delivery Manager",
     "count": 1,
     "avg_days_open": 73.0
   },
   {
+    "city": "Cologne",
+    "country": "Germany",
+    "role": "Scrum Master",
+    "count": 1,
+    "avg_days_open": 44.0
+  },
+  {
+    "city": "Cologne",
+    "country": "Germany",
+    "role": "Product Manager",
+    "count": 4,
+    "avg_days_open": 48.5
+  },
+  {
+    "city": "Cologne",
+    "country": "Germany",
+    "role": "Release Train Engineer",
+    "count": 3,
+    "avg_days_open": 32.3
+  },
+  {
+    "city": "Cologne",
+    "country": "Germany",
+    "role": "Change Manager",
+    "count": 1,
+    "avg_days_open": 65.0
+  },
+  {
     "city": "Vienna",
     "country": "Austria",
-    "role": "Transformation Manager",
+    "role": "Quality Engineer",
+    "count": 4,
+    "avg_days_open": 34.5
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "role": "PMO",
+    "count": 4,
+    "avg_days_open": 40.5
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "role": "Release Train Engineer",
     "count": 2,
-    "avg_days_open": 57.0
+    "avg_days_open": 36.5
   },
   {
     "city": "Vienna",
     "country": "Austria",
     "role": "Project Manager",
-    "count": 3,
-    "avg_days_open": 39.3
+    "count": 8,
+    "avg_days_open": 32.5
   },
   {
     "city": "Vienna",
     "country": "Austria",
-    "role": "Delivery Manager",
-    "count": 1,
-    "avg_days_open": 38.0
+    "role": "Release Manager",
+    "count": 10,
+    "avg_days_open": 33.2
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "role": "Product Owner",
+    "count": 2,
+    "avg_days_open": 35.5
   },
   {
     "city": "Vienna",
     "country": "Austria",
     "role": "Agile Coach",
-    "count": 2,
-    "avg_days_open": 69.0
+    "count": 3,
+    "avg_days_open": 35.7
   },
   {
     "city": "Vienna",
     "country": "Austria",
     "role": "Scrum Master",
+    "count": 3,
+    "avg_days_open": 23.7
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "role": "Quality Manager",
+    "count": 2,
+    "avg_days_open": 33.5
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "role": "Delivery Manager",
+    "count": 4,
+    "avg_days_open": 36.5
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "role": "Product Manager",
+    "count": 4,
+    "avg_days_open": 9.2
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "role": "Program Manager",
+    "count": 4,
+    "avg_days_open": 48.5
+  },
+  {
+    "city": "Vienna",
+    "country": "Austria",
+    "role": "Portfolio Manager",
+    "count": 1,
+    "avg_days_open": 11.0
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Product Owner",
+    "count": 3,
+    "avg_days_open": 38.0
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Project Manager",
+    "count": 7,
+    "avg_days_open": 28.9
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Release Manager",
+    "count": 6,
+    "avg_days_open": 41.8
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "PMO",
+    "count": 4,
+    "avg_days_open": 41.5
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Delivery Manager",
+    "count": 4,
+    "avg_days_open": 46.8
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Agile Coach",
+    "count": 3,
+    "avg_days_open": 10.3
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Quality Manager",
+    "count": 2,
+    "avg_days_open": 55.5
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Portfolio Manager",
+    "count": 1,
+    "avg_days_open": 7.0
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Scrum Master",
+    "count": 1,
+    "avg_days_open": 22.0
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Release Train Engineer",
+    "count": 1,
+    "avg_days_open": 0.0
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Program Manager",
+    "count": 5,
+    "avg_days_open": 31.2
+  },
+  {
+    "city": "Graz",
+    "country": "Austria",
+    "role": "Product Manager",
     "count": 1,
     "avg_days_open": 5.0
   },
   {
     "city": "Graz",
     "country": "Austria",
+    "role": "Quality Engineer",
+    "count": 1,
+    "avg_days_open": 30.0
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Product Manager",
+    "count": 10,
+    "avg_days_open": 33.2
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
     "role": "Program Manager",
-    "count": 11,
-    "avg_days_open": 33.3
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "Release Manager",
-    "count": 8,
-    "avg_days_open": 24.9
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "PMO",
     "count": 4,
-    "avg_days_open": 31.2
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "Transformation Manager",
-    "count": 4,
-    "avg_days_open": 22.5
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "Scrum Master",
-    "count": 3,
-    "avg_days_open": 36.3
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "Project Manager",
-    "count": 6,
-    "avg_days_open": 36.5
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "Delivery Manager",
-    "count": 8,
-    "avg_days_open": 23.5
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "Agile Coach",
-    "count": 5,
-    "avg_days_open": 24.6
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "Portfolio Manager",
-    "count": 1,
-    "avg_days_open": 15.0
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "Change Manager",
-    "count": 3,
-    "avg_days_open": 36.0
-  },
-  {
-    "city": "Graz",
-    "country": "Austria",
-    "role": "Release Train Engineer",
-    "count": 1,
-    "avg_days_open": 39.0
+    "avg_days_open": 41.0
   },
   {
     "city": "Zurich",
     "country": "Switzerland",
     "role": "PMO",
     "count": 6,
-    "avg_days_open": 39.8
+    "avg_days_open": 34.0
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Quality Engineer",
+    "count": 3,
+    "avg_days_open": 59.7
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Release Manager",
+    "count": 6,
+    "avg_days_open": 29.3
   },
   {
     "city": "Zurich",
     "country": "Switzerland",
     "role": "Scrum Master",
+    "count": 1,
+    "avg_days_open": 42.0
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Product Owner",
     "count": 3,
-    "avg_days_open": 48.7
-  },
-  {
-    "city": "Zurich",
-    "country": "Switzerland",
-    "role": "Delivery Manager",
-    "count": 2,
-    "avg_days_open": 29.5
-  },
-  {
-    "city": "Zurich",
-    "country": "Switzerland",
-    "role": "Portfolio Manager",
-    "count": 2,
-    "avg_days_open": 43.0
-  },
-  {
-    "city": "Zurich",
-    "country": "Switzerland",
-    "role": "Program Manager",
-    "count": 8,
-    "avg_days_open": 38.1
-  },
-  {
-    "city": "Zurich",
-    "country": "Switzerland",
-    "role": "Release Manager",
-    "count": 5,
-    "avg_days_open": 30.8
-  },
-  {
-    "city": "Zurich",
-    "country": "Switzerland",
-    "role": "Change Manager",
-    "count": 3,
-    "avg_days_open": 72.3
+    "avg_days_open": 44.7
   },
   {
     "city": "Zurich",
     "country": "Switzerland",
     "role": "Project Manager",
-    "count": 5,
-    "avg_days_open": 34.4
-  },
-  {
-    "city": "Zurich",
-    "country": "Switzerland",
-    "role": "Release Train Engineer",
-    "count": 1,
-    "avg_days_open": 52.0
-  },
-  {
-    "city": "Geneva",
-    "country": "Switzerland",
-    "role": "Release Manager",
-    "count": 6,
+    "count": 3,
     "avg_days_open": 43.7
   },
   {
-    "city": "Geneva",
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Portfolio Manager",
+    "count": 1,
+    "avg_days_open": 33.0
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Change Manager",
+    "count": 1,
+    "avg_days_open": 0.0
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Delivery Manager",
+    "count": 5,
+    "avg_days_open": 49.2
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Release Train Engineer",
+    "count": 2,
+    "avg_days_open": 44.0
+  },
+  {
+    "city": "Zurich",
     "country": "Switzerland",
     "role": "Agile Coach",
     "count": 2,
-    "avg_days_open": 27.0
+    "avg_days_open": 15.0
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Transformation Manager",
+    "count": 3,
+    "avg_days_open": 33.3
+  },
+  {
+    "city": "Zurich",
+    "country": "Switzerland",
+    "role": "Quality Manager",
+    "count": 1,
+    "avg_days_open": 64.0
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Project Manager",
+    "count": 5,
+    "avg_days_open": 33.6
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Product Manager",
+    "count": 5,
+    "avg_days_open": 31.6
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Release Manager",
+    "count": 3,
+    "avg_days_open": 10.0
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Transformation Manager",
+    "count": 3,
+    "avg_days_open": 35.0
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Quality Manager",
+    "count": 3,
+    "avg_days_open": 21.0
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Delivery Manager",
+    "count": 5,
+    "avg_days_open": 35.0
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Program Manager",
+    "count": 4,
+    "avg_days_open": 39.2
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Change Manager",
+    "count": 6,
+    "avg_days_open": 30.5
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Scrum Master",
+    "count": 2,
+    "avg_days_open": 25.0
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Product Owner",
+    "count": 9,
+    "avg_days_open": 34.4
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Quality Engineer",
+    "count": 2,
+    "avg_days_open": 33.0
+  },
+  {
+    "city": "Geneva",
+    "country": "Switzerland",
+    "role": "Portfolio Manager",
+    "count": 2,
+    "avg_days_open": 24.0
   },
   {
     "city": "Geneva",
     "country": "Switzerland",
     "role": "Release Train Engineer",
     "count": 1,
-    "avg_days_open": 12.0
-  },
-  {
-    "city": "Geneva",
-    "country": "Switzerland",
-    "role": "Program Manager",
-    "count": 1,
-    "avg_days_open": 72.0
-  },
-  {
-    "city": "Geneva",
-    "country": "Switzerland",
-    "role": "Delivery Manager",
-    "count": 4,
-    "avg_days_open": 14.2
+    "avg_days_open": 58.0
   },
   {
     "city": "Geneva",
     "country": "Switzerland",
     "role": "PMO",
-    "count": 1,
-    "avg_days_open": 73.0
+    "count": 4,
+    "avg_days_open": 37.5
   },
   {
-    "city": "Geneva",
+    "city": "Basel",
     "country": "Switzerland",
-    "role": "Project Manager",
-    "count": 1,
-    "avg_days_open": 36.0
+    "role": "Transformation Manager",
+    "count": 3,
+    "avg_days_open": 45.3
   },
   {
-    "city": "Geneva",
+    "city": "Basel",
     "country": "Switzerland",
-    "role": "Scrum Master",
-    "count": 1,
-    "avg_days_open": 51.0
+    "role": "Program Manager",
+    "count": 3,
+    "avg_days_open": 57.0
+  },
+  {
+    "city": "Basel",
+    "country": "Switzerland",
+    "role": "Product Owner",
+    "count": 6,
+    "avg_days_open": 39.2
   },
   {
     "city": "Basel",
     "country": "Switzerland",
     "role": "Change Manager",
-    "count": 4,
-    "avg_days_open": 40.8
+    "count": 3,
+    "avg_days_open": 41.7
   },
   {
     "city": "Basel",
     "country": "Switzerland",
     "role": "Release Manager",
     "count": 12,
-    "avg_days_open": 28.9
-  },
-  {
-    "city": "Basel",
-    "country": "Switzerland",
-    "role": "Project Manager",
-    "count": 11,
-    "avg_days_open": 32.4
-  },
-  {
-    "city": "Basel",
-    "country": "Switzerland",
-    "role": "Transformation Manager",
-    "count": 4,
-    "avg_days_open": 51.5
-  },
-  {
-    "city": "Basel",
-    "country": "Switzerland",
-    "role": "Agile Coach",
-    "count": 5,
-    "avg_days_open": 28.4
-  },
-  {
-    "city": "Basel",
-    "country": "Switzerland",
-    "role": "Scrum Master",
-    "count": 2,
-    "avg_days_open": 51.0
-  },
-  {
-    "city": "Basel",
-    "country": "Switzerland",
-    "role": "Release Train Engineer",
-    "count": 5,
-    "avg_days_open": 50.0
-  },
-  {
-    "city": "Basel",
-    "country": "Switzerland",
-    "role": "PMO",
-    "count": 8,
-    "avg_days_open": 36.5
-  },
-  {
-    "city": "Basel",
-    "country": "Switzerland",
-    "role": "Program Manager",
-    "count": 5,
-    "avg_days_open": 19.6
+    "avg_days_open": 26.6
   },
   {
     "city": "Basel",
     "country": "Switzerland",
     "role": "Delivery Manager",
+    "count": 4,
+    "avg_days_open": 31.0
+  },
+  {
+    "city": "Basel",
+    "country": "Switzerland",
+    "role": "Project Manager",
+    "count": 13,
+    "avg_days_open": 36.5
+  },
+  {
+    "city": "Basel",
+    "country": "Switzerland",
+    "role": "Product Manager",
     "count": 2,
-    "avg_days_open": 35.5
+    "avg_days_open": 32.0
+  },
+  {
+    "city": "Basel",
+    "country": "Switzerland",
+    "role": "Agile Coach",
+    "count": 3,
+    "avg_days_open": 17.7
+  },
+  {
+    "city": "Basel",
+    "country": "Switzerland",
+    "role": "Release Train Engineer",
+    "count": 4,
+    "avg_days_open": 44.5
+  },
+  {
+    "city": "Basel",
+    "country": "Switzerland",
+    "role": "PMO",
+    "count": 4,
+    "avg_days_open": 55.2
+  },
+  {
+    "city": "Basel",
+    "country": "Switzerland",
+    "role": "Quality Engineer",
+    "count": 2,
+    "avg_days_open": 33.5
+  },
+  {
+    "city": "Basel",
+    "country": "Switzerland",
+    "role": "Scrum Master",
+    "count": 3,
+    "avg_days_open": 26.7
   },
   {
     "city": "Basel",
     "country": "Switzerland",
     "role": "Portfolio Manager",
-    "count": 3,
-    "avg_days_open": 43.3
+    "count": 1,
+    "avg_days_open": 61.0
   }
 ]

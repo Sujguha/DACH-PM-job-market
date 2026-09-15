@@ -48,6 +48,10 @@ ROLES = {
     "release train engineer": "Release Train Engineer",
     "portfolio manager": "Portfolio Manager",
     "transformation manager": "Transformation Manager",
+    "product owner": "Product Owner",
+    "product manager": "Product Manager",
+    "quality manager": "Quality Manager",
+    "quality engineer": "Quality Engineer",
 }
 
 RESULTS_PER_PAGE = 50  # Adzuna's max per page
@@ -86,6 +90,19 @@ def guess_level(title: str) -> str:
     return "Mid"
 
 
+def guess_job_type(job: dict) -> str:
+    """Maps Adzuna's contract_type/contract_time fields to a single label."""
+    contract_type = (job.get("contract_type") or "").lower()
+    contract_time = (job.get("contract_time") or "").lower()
+    if contract_type == "contract":
+        return "Contract"
+    if contract_time == "part_time":
+        return "Part time"
+    if contract_time == "full_time":
+        return "Full time"
+    return "Not specified"
+
+
 def main():
     postings_by_id = {}
 
@@ -118,6 +135,7 @@ def main():
                     "days_open": days_open(created) if created else None,
                     "role": role_label,
                     "level": guess_level(job.get("title")),
+                    "job_type": guess_job_type(job),
                     "url": job.get("redirect_url"),
                     "salary_min": job.get("salary_min"),
                     "salary_max": job.get("salary_max"),
