@@ -1,82 +1,102 @@
 [
   {
-    "company": "Siemens",
-    "count": 32
+    "company": "Job-Room",
+    "count": 75
   },
   {
-    "company": "Munich Re",
-    "count": 28
+    "company": "mycareernow GmbH",
+    "count": 40
   },
   {
-    "company": "Zurich Insurance",
-    "count": 27
+    "company": "KIND GmbH & Co. KG",
+    "count": 14
+  },
+  {
+    "company": "FERCHAU GmbH",
+    "count": 12
+  },
+  {
+    "company": "Aareal Bank AG",
+    "count": 11
+  },
+  {
+    "company": "PricewaterhouseCoopers",
+    "count": 10
+  },
+  {
+    "company": "Passion for People GmbH",
+    "count": 9
+  },
+  {
+    "company": "Richemont",
+    "count": 9
   },
   {
     "company": "Roche",
-    "count": 26
+    "count": 8
   },
   {
-    "company": "SAP",
-    "count": 26
+    "company": "Blockstream",
+    "count": 8
   },
   {
-    "company": "Capgemini",
-    "count": 25
+    "company": "Gi Group Outsourcing Deutschland GmbH",
+    "count": 7
   },
   {
-    "company": "Erste Group",
-    "count": 24
+    "company": "Lam Research",
+    "count": 7
   },
   {
-    "company": "Allianz",
-    "count": 24
+    "company": "JD.COM",
+    "count": 6
   },
   {
-    "company": "Fiserv",
-    "count": 24
+    "company": "PLATH GmbH & Co. KG",
+    "count": 6
   },
   {
-    "company": "Sopra Steria",
-    "count": 23
+    "company": "MVZ Labor Ravensburg - Labor Dr. Gärtner",
+    "count": 6
   },
   {
-    "company": "OMV",
-    "count": 23
+    "company": "g2 Recruitment",
+    "count": 6
   },
   {
-    "company": "UBS",
-    "count": 23
+    "company": "WITRON Service GmbH & Co. KG",
+    "count": 6
   },
   {
-    "company": "BMW Group",
-    "count": 21
+    "company": "HTB Hanseatische Fondshaus GmbH",
+    "count": 6
   },
   {
-    "company": "Continental",
-    "count": 21
+    "company": "GTÜ Gesellschaft für Technische Überwachung mbH",
+    "count": 6
   },
   {
-    "company": "Bosch",
-    "count": 21
+    "company": "AT&S Austria Technologie & Systemtechnik AG",
+    "count": 6
   },
   {
-    "company": "Bertelsmann",
-    "count": 20
+    "company": "Iventa. The Human Management Group",
+    "count": 6
   },
   {
-    "company": "Nestle",
-    "count": 20
+    "company": "GE Vernova",
+    "count": 6
   },
   {
-    "company": "T-Systems",
-    "count": 20
+    "company": "SThree Germany",
+    "count": 6
   },
   {
-    "company": "Deutsche Bank",
-    "count": 19
+    "company": "Lonza",
+    "count": 6
   },
   {
-    "company": "Voith",
-    "count": 19
+    "company": "ITech Consult AG",
+    "count": 6
   }
 ]
