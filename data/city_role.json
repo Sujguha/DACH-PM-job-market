@@ -53,7 +53,7 @@
     "country": "Germany",
     "role": "Program Manager",
     "count": 2,
-    "avg_days_open": 10.9
+    "avg_days_open": 11.0
   },
   {
     "city": "Fürstenfeldbruck",
@@ -74,7 +74,7 @@
     "country": "Germany",
     "role": "Program Manager",
     "count": 1,
-    "avg_days_open": 10.4
+    "avg_days_open": 10.5
   },
   {
     "city": "Darmstadt",
@@ -133,14 +133,28 @@
     "avg_days_open": 229.2
   },
   {
-    "city": "Lehrte",
+    "city": "Burgwedel",
     "country": "Germany",
     "role": "Release Manager",
-    "count": 1,
-    "avg_days_open": 51.3
+    "count": 3,
+    "avg_days_open": 89.9
   },
   {
     "city": "Soltau",
+    "country": "Germany",
+    "role": "Release Manager",
+    "count": 1,
+    "avg_days_open": 89.9
+  },
+  {
+    "city": "Burgdorf",
+    "country": "Germany",
+    "role": "Release Manager",
+    "count": 1,
+    "avg_days_open": 89.9
+  },
+  {
+    "city": "Wedemark",
     "country": "Germany",
     "role": "Release Manager",
     "count": 1,
@@ -154,25 +168,11 @@
     "avg_days_open": 89.9
   },
   {
-    "city": "Burgwedel",
-    "country": "Germany",
-    "role": "Release Manager",
-    "count": 3,
-    "avg_days_open": 89.9
-  },
-  {
-    "city": "Wedemark",
+    "city": "Lehrte",
     "country": "Germany",
     "role": "Release Manager",
     "count": 1,
-    "avg_days_open": 89.9
-  },
-  {
-    "city": "Burgdorf",
-    "country": "Germany",
-    "role": "Release Manager",
-    "count": 1,
-    "avg_days_open": 89.9
+    "avg_days_open": 51.3
   },
   {
     "city": "Deutschland",
@@ -207,7 +207,7 @@
     "country": "Germany",
     "role": "Release Manager",
     "count": 1,
-    "avg_days_open": 38.9
+    "avg_days_open": 39.0
   },
   {
     "city": "Region Hannover (Kreis)",
@@ -277,7 +277,7 @@
     "country": "Germany",
     "role": "Release Manager",
     "count": 1,
-    "avg_days_open": 35.3
+    "avg_days_open": 35.4
   },
   {
     "city": "Geneicken",
@@ -361,7 +361,7 @@
     "country": "Germany",
     "role": "PMO",
     "count": 2,
-    "avg_days_open": 87.6
+    "avg_days_open": 87.7
   },
   {
     "city": "Tuttlingen",
@@ -389,7 +389,7 @@
     "country": "Germany",
     "role": "PMO",
     "count": 1,
-    "avg_days_open": 11.4
+    "avg_days_open": 11.5
   },
   {
     "city": "Allach-Untermenzing",
@@ -417,7 +417,7 @@
     "country": "Germany",
     "role": "PMO",
     "count": 1,
-    "avg_days_open": 13.4
+    "avg_days_open": 13.5
   },
   {
     "city": "Korschenbroich",
@@ -473,14 +473,14 @@
     "country": "Germany",
     "role": "Project Manager",
     "count": 2,
-    "avg_days_open": 11.4
+    "avg_days_open": 11.5
   },
   {
     "city": "Leipzig",
     "country": "Germany",
     "role": "Project Manager",
     "count": 1,
-    "avg_days_open": 7.4
+    "avg_days_open": 7.5
   },
   {
     "city": "Hamburg",
@@ -515,7 +515,7 @@
     "country": "Germany",
     "role": "Project Manager",
     "count": 1,
-    "avg_days_open": 19.8
+    "avg_days_open": 19.9
   },
   {
     "city": "Kempten (Allgäu)",
@@ -564,7 +564,7 @@
     "country": "Germany",
     "role": "Delivery Manager",
     "count": 4,
-    "avg_days_open": 128.7
+    "avg_days_open": 128.8
   },
   {
     "city": "Deutschland",
@@ -592,14 +592,14 @@
     "country": "Germany",
     "role": "Delivery Manager",
     "count": 1,
-    "avg_days_open": 13.4
+    "avg_days_open": 13.5
   },
   {
     "city": "Frankfurt am Main",
     "country": "Germany",
     "role": "Delivery Manager",
     "count": 4,
-    "avg_days_open": 65.0
+    "avg_days_open": 65.1
   },
   {
     "city": "Altstadt-Lehel",
@@ -634,21 +634,21 @@
     "country": "Germany",
     "role": "Delivery Manager",
     "count": 1,
-    "avg_days_open": 18.3
+    "avg_days_open": 18.4
   },
   {
     "city": "Saarlouis",
     "country": "Germany",
     "role": "Delivery Manager",
     "count": 1,
-    "avg_days_open": 18.3
+    "avg_days_open": 18.4
   },
   {
     "city": "Borken",
     "country": "Germany",
     "role": "Delivery Manager",
     "count": 1,
-    "avg_days_open": 18.3
+    "avg_days_open": 18.4
   },
   {
     "city": "Parkstein",
@@ -669,7 +669,7 @@
     "country": "Germany",
     "role": "Change Manager",
     "count": 2,
-    "avg_days_open": 8.4
+    "avg_days_open": 8.5
   },
   {
     "city": "Berlin",
@@ -725,7 +725,7 @@
     "country": "Germany",
     "role": "Change Manager",
     "count": 1,
-    "avg_days_open": 2.7
+    "avg_days_open": 2.8
   },
   {
     "city": "München",
@@ -739,7 +739,7 @@
     "country": "Germany",
     "role": "Change Manager",
     "count": 1,
-    "avg_days_open": 445.9
+    "avg_days_open": 446.0
   },
   {
     "city": "Alsterdorf",
@@ -830,7 +830,7 @@
     "country": "Germany",
     "role": "Agile Coach",
     "count": 1,
-    "avg_days_open": 13.4
+    "avg_days_open": 13.5
   },
   {
     "city": "Osnabrück",
@@ -1232,13 +1232,6 @@
     "avg_days_open": 1036.1
   },
   {
-    "city": "Aschheim",
-    "country": "Germany",
-    "role": "Scrum Master",
-    "count": 1,
-    "avg_days_open": 11.9
-  },
-  {
     "city": "Bothfeld",
     "country": "Germany",
     "role": "Scrum Master",
@@ -1335,6 +1328,13 @@
     "role": "Scrum Master",
     "count": 1,
     "avg_days_open": 60.9
+  },
+  {
+    "city": "Eppinghofen",
+    "country": "Germany",
+    "role": "Scrum Master",
+    "count": 1,
+    "avg_days_open": 60.1
   },
   {
     "city": "Wiesbaden",
@@ -1474,7 +1474,7 @@
     "country": "Germany",
     "role": "Release Train Engineer",
     "count": 1,
-    "avg_days_open": 3.4
+    "avg_days_open": 3.5
   },
   {
     "city": "Ermingen",
@@ -1502,14 +1502,14 @@
     "country": "Germany",
     "role": "Portfolio Manager",
     "count": 1,
-    "avg_days_open": 10.4
+    "avg_days_open": 10.5
   },
   {
     "city": "Hamburg",
     "country": "Germany",
     "role": "Portfolio Manager",
     "count": 6,
-    "avg_days_open": 23.3
+    "avg_days_open": 23.4
   },
   {
     "city": "Köln",
@@ -1544,7 +1544,7 @@
     "country": "Germany",
     "role": "Portfolio Manager",
     "count": 1,
-    "avg_days_open": 19.7
+    "avg_days_open": 19.8
   },
   {
     "city": "Nordrhein-Westfalen",
@@ -1649,7 +1649,7 @@
     "country": "Germany",
     "role": "Transformation Manager",
     "count": 1,
-    "avg_days_open": 31.4
+    "avg_days_open": 31.5
   },
   {
     "city": "Mainz",
@@ -1677,7 +1677,7 @@
     "country": "Germany",
     "role": "Transformation Manager",
     "count": 1,
-    "avg_days_open": 35.3
+    "avg_days_open": 35.4
   },
   {
     "city": "Gütersloh",
@@ -1761,7 +1761,7 @@
     "country": "Germany",
     "role": "Transformation Manager",
     "count": 1,
-    "avg_days_open": 38.9
+    "avg_days_open": 39.0
   },
   {
     "city": "Wien",
@@ -1936,7 +1936,7 @@
     "country": "Austria",
     "role": "Project Manager",
     "count": 1,
-    "avg_days_open": 5.7
+    "avg_days_open": 5.8
   },
   {
     "city": "Wolkersdorf im Weinviertel",
@@ -2006,7 +2006,7 @@
     "country": "Austria",
     "role": "Project Manager",
     "count": 1,
-    "avg_days_open": 18.3
+    "avg_days_open": 18.4
   },
   {
     "city": "Leonding",
@@ -2055,7 +2055,7 @@
     "country": "Austria",
     "role": "Delivery Manager",
     "count": 2,
-    "avg_days_open": 80.0
+    "avg_days_open": 80.1
   },
   {
     "city": "Alsergrund",
@@ -2531,7 +2531,7 @@
     "country": "Switzerland",
     "role": "PMO",
     "count": 2,
-    "avg_days_open": 18.4
+    "avg_days_open": 18.5
   },
   {
     "city": "Zollikon",
@@ -3336,6 +3336,6 @@
     "country": "Switzerland",
     "role": "Transformation Manager",
     "count": 1,
-    "avg_days_open": 80.0
+    "avg_days_open": 80.1
   }
 ]

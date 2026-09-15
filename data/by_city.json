@@ -163,7 +163,7 @@
     "city": "Basel",
     "country": "Switzerland",
     "count": 7,
-    "avg_days_open": 25.6,
+    "avg_days_open": 25.7,
     "lat": 47.5558,
     "lon": 7.5888
   },
@@ -235,7 +235,7 @@
     "city": "Bonn",
     "country": "Germany",
     "count": 5,
-    "avg_days_open": 7.5,
+    "avg_days_open": 7.6,
     "lat": 50.7194,
     "lon": 7.1124
   },
@@ -291,7 +291,7 @@
     "city": "Bothfeld",
     "country": "Germany",
     "count": 4,
-    "avg_days_open": 484.5,
+    "avg_days_open": 484.6,
     "lat": 52.4167,
     "lon": 9.7986
   },
@@ -379,7 +379,7 @@
     "city": "Ulm",
     "country": "Germany",
     "count": 3,
-    "avg_days_open": 58.6,
+    "avg_days_open": 58.7,
     "lat": 48.3831,
     "lon": 9.8569
   },
@@ -427,7 +427,7 @@
     "city": "Wiener Neudorf",
     "country": "Austria",
     "count": 3,
-    "avg_days_open": 7.1,
+    "avg_days_open": 7.2,
     "lat": 48.0837,
     "lon": 16.318
   },
@@ -539,7 +539,7 @@
     "city": "Hannover",
     "country": "Germany",
     "count": 2,
-    "avg_days_open": 28.4,
+    "avg_days_open": 28.5,
     "lat": 52.3788,
     "lon": 9.7428
   },
@@ -619,7 +619,7 @@
     "city": "Borken",
     "country": "Germany",
     "count": 2,
-    "avg_days_open": 14.7,
+    "avg_days_open": 14.8,
     "lat": 51.8442,
     "lon": 6.8551
   },
@@ -747,7 +747,7 @@
     "city": "Enns",
     "country": "Austria",
     "count": 2,
-    "avg_days_open": 80.0,
+    "avg_days_open": 80.1,
     "lat": 48.2111,
     "lon": 14.4611
   },
@@ -899,7 +899,7 @@
     "city": "Neu-Isenburg",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 10.4,
+    "avg_days_open": 10.5,
     "lat": 50.0532,
     "lon": 8.6862
   },
@@ -968,12 +968,12 @@
     "lon": 9.8399
   },
   {
-    "city": "Celle",
+    "city": "Burgdorf",
     "country": "Germany",
     "count": 1,
     "avg_days_open": 89.9,
-    "lat": 52.6396,
-    "lon": 10.0958
+    "lat": 52.4464,
+    "lon": 10.0067
   },
   {
     "city": "Wedemark",
@@ -984,12 +984,12 @@
     "lon": 9.7322
   },
   {
-    "city": "Burgdorf",
+    "city": "Celle",
     "country": "Germany",
     "count": 1,
     "avg_days_open": 89.9,
-    "lat": 52.4464,
-    "lon": 10.0067
+    "lat": 52.6396,
+    "lon": 10.0958
   },
   {
     "city": "Region Hannover (Kreis)",
@@ -1019,7 +1019,7 @@
     "city": "Wasseralfingen",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 35.3,
+    "avg_days_open": 35.4,
     "lat": 48.836,
     "lon": 10.0899
   },
@@ -1083,7 +1083,7 @@
     "city": "Lübeck",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 13.4,
+    "avg_days_open": 13.5,
     "lat": 53.8696,
     "lon": 10.6876
   },
@@ -1115,7 +1115,7 @@
     "city": "Leipzig",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 7.4,
+    "avg_days_open": 7.5,
     "lat": 51.3393,
     "lon": 12.3736
   },
@@ -1123,7 +1123,7 @@
     "city": "Beyendorf-Sohlen",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 19.8,
+    "avg_days_open": 19.9,
     "lat": 52.0574,
     "lon": 11.6331
   },
@@ -1155,7 +1155,7 @@
     "city": "Saarlouis",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 18.3,
+    "avg_days_open": 18.4,
     "lat": 49.3157,
     "lon": 6.7504
   },
@@ -1163,7 +1163,7 @@
     "city": "Handelshäfen",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 2.7,
+    "avg_days_open": 2.8,
     "lat": 53.0962,
     "lon": 8.7732
   },
@@ -1171,7 +1171,7 @@
     "city": "Feilitzsch",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 445.9,
+    "avg_days_open": 446.0,
     "lat": 50.3621,
     "lon": 11.9351
   },
@@ -1536,14 +1536,6 @@
     "lon": 8.5705
   },
   {
-    "city": "Aschheim",
-    "country": "Germany",
-    "count": 1,
-    "avg_days_open": 11.9,
-    "lat": 48.1711,
-    "lon": 11.7167
-  },
-  {
     "city": "Bockenheim",
     "country": "Germany",
     "count": 1,
@@ -1600,6 +1592,14 @@
     "lon": 6.9473
   },
   {
+    "city": "Eppinghofen",
+    "country": "Germany",
+    "count": 1,
+    "avg_days_open": 60.1,
+    "lat": 51.4358,
+    "lon": 6.8935
+  },
+  {
     "city": "Westend-Süd",
     "country": "Germany",
     "count": 1,
@@ -1651,7 +1651,7 @@
     "city": "Wannsee",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 10.4,
+    "avg_days_open": 10.5,
     "lat": 52.4199,
     "lon": 13.1616
   },
@@ -1715,7 +1715,7 @@
     "city": "Oberkochen",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 35.3,
+    "avg_days_open": 35.4,
     "lat": 48.7841,
     "lon": 10.1056
   },
@@ -1779,7 +1779,7 @@
     "city": "Tettnang",
     "country": "Germany",
     "count": 1,
-    "avg_days_open": 38.9,
+    "avg_days_open": 39.0,
     "lat": 47.6705,
     "lon": 9.5885
   },
@@ -1835,7 +1835,7 @@
     "city": "Sulz im Weinviertel",
     "country": "Austria",
     "count": 1,
-    "avg_days_open": 5.7,
+    "avg_days_open": 5.8,
     "lat": 48.4884,
     "lon": 16.6824
   },
@@ -2275,7 +2275,7 @@
     "city": "Siders",
     "country": "Switzerland",
     "count": 1,
-    "avg_days_open": 80.0,
+    "avg_days_open": 80.1,
     "lat": null,
     "lon": null
   }
