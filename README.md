@@ -1,12 +1,14 @@
-# Release Radar — DACH PM / Release Management Job Tracker
+# Job Radar — Program, Product & Quality Job Tracker
 
 A daily-refreshed dashboard tracking demand for Program Manager, Release
-Manager, PMO, Delivery Manager, Change Manager, Agile Coach, Scrum Master,
-Release Train Engineer, Portfolio Manager and Transformation Manager roles
-across Germany, Austria, Switzerland and the Netherlands — pulled from the free
-[Adzuna](https://developer.adzuna.com) Jobs API.
+Manager, PMO, Project Manager, Delivery Manager, Change Manager, Agile Coach,
+Scrum Master, Release Train Engineer, Portfolio Manager, Transformation
+Manager, Product Owner, Product Manager, Quality Manager and Quality Engineer
+roles across Germany, Austria, Switzerland and the Netherlands — pulled from
+the free [Adzuna](https://developer.adzuna.com) Jobs API.
 
-**Live site:** https://sujguha.github.io/DACH-PM-job-market/
+**Live site:** hosted on Netlify (see section 4b below) — update this line
+with your actual Netlify URL once you've renamed the site.
 
 It ships with **sample data** so the site works immediately. Follow the
 steps below to switch it over to live, auto-refreshing data.
@@ -34,10 +36,10 @@ scripts/fetch_jobs.py        pulls + aggregates from Adzuna into data/*.json
 
 Via the command line:
 ```bash
-cd dach-pm-tracker
+cd job-market
 git init
 git add .
-git commit -m "Initial commit: Release Radar"
+git commit -m "Initial commit: Job Radar"
 git branch -M main
 git remote add origin https://github.com/<your-username>/<repo-name>.git
 git push -u origin main
@@ -74,6 +76,28 @@ If Pages settings look correct but the site still shows "There isn't a
 GitHub Pages site here," check the **Actions** tab for a run called "pages
 build and deployment" — re-saving the branch/folder dropdown forces a new
 attempt if one hasn't run.
+
+## 4b. Or deploy on Netlify instead (or as well)
+
+Netlify is a good alternative if you want to keep the GitHub repo **private**
+— GitHub Pages on the free plan requires a public repo, but Netlify can
+deploy from a private repo for free and the resulting site is still public
+at its own URL.
+
+1. Sign up free at <https://app.netlify.com> and connect your GitHub account.
+2. **Add new site → Import an existing project → Deploy with GitHub**, then
+   pick this repo.
+3. Build settings: leave **Build command** blank and set **Publish
+   directory** to the repo root (this is a plain static site, no build step).
+4. Click **Deploy**. Netlify gives you a `<random-name>.netlify.app` URL —
+   rename it under **Site settings → Site details → Change site name** if
+   you want something more readable.
+5. From then on, every commit pushed to `main` (including the daily data
+   sync from GitHub Actions) triggers an automatic Netlify redeploy — no
+   further action needed on the Netlify side.
+
+Netlify's connection to the repo is tied to its internal ID, not its name,
+so renaming the GitHub repo later won't break the Netlify deployment.
 
 ## 5. Run the first live sync
 
