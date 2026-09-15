@@ -3,7 +3,7 @@
 A daily-refreshed dashboard tracking demand for Program Manager, Release
 Manager, PMO, Delivery Manager, Change Manager, Agile Coach, Scrum Master,
 Release Train Engineer, Portfolio Manager and Transformation Manager roles
-across Germany, Austria and Switzerland — pulled from the free
+across Germany, Austria, Switzerland and the Netherlands — pulled from the free
 [Adzuna](https://developer.adzuna.com) Jobs API.
 
 **Live site:** https://sujguha.github.io/DACH-PM-job-market/
@@ -27,7 +27,7 @@ scripts/fetch_jobs.py        pulls + aggregates from Adzuna into data/*.json
 1. Sign up at <https://developer.adzuna.com/> (free).
 2. Create an app to get an `app_id` and `app_key`.
 3. Adzuna's free tier is generous but not unlimited — this tracker makes
-   ~33 calls/day (3 countries × 11 roles), well within it, but check your
+   ~60 calls/day (4 countries × 15 roles), well within it, but check your
    dashboard if you add more role keywords.
 
 ## 2. Push this to a new GitHub repo

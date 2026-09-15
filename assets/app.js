@@ -66,6 +66,7 @@ function renderCards(summary) {
   document.getElementById("stat-de").textContent = summary.by_country?.Germany ?? 0;
   document.getElementById("stat-at").textContent = summary.by_country?.Austria ?? 0;
   document.getElementById("stat-ch").textContent = summary.by_country?.Switzerland ?? 0;
+  document.getElementById("stat-nl").textContent = summary.by_country?.Netherlands ?? 0;
 }
 
 function renderRoleChart(byRole) {

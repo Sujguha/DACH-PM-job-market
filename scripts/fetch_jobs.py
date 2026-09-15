@@ -30,8 +30,8 @@ APP_KEY = os.environ.get("ADZUNA_APP_KEY")
 if not APP_ID or not APP_KEY:
     sys.exit("Missing ADZUNA_APP_ID / ADZUNA_APP_KEY environment variables.")
 
-# Adzuna's country codes for the DACH region.
-COUNTRIES = {"de": "Germany", "at": "Austria", "ch": "Switzerland"}
+# Adzuna's country codes for the tracked region.
+COUNTRIES = {"de": "Germany", "at": "Austria", "ch": "Switzerland", "nl": "Netherlands"}
 
 # Search keyword -> display label. Adzuna's `what` param full-text matches
 # against title + description, so keep these tight to hold down noise.

@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Release Radar — DACH Program &amp; Release Management Job Pipeline</title>
-<meta name="description" content="Daily-tracked demand for Program, Release, Product, PMO, Delivery and Quality Management roles across Germany, Austria and Switzerland.">
+<title>Job Radar — Program, Product & Quality Job Pipeline</title>
+<meta name="description" content="Daily-tracked demand for Program, Release, Product, PMO, Delivery and Quality Management roles across Germany, Austria, Switzerland and the Netherlands.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="assets/style.css?v=1.3">
+<link rel="stylesheet" href="assets/style.css?v=1.5">
 </head>
 <body>
 
 <header class="topbar">
   <div class="topbar-brand">
     <span class="dot" id="build-dot" aria-hidden="true"></span>
-    <span class="brand-name">Release Radar</span>
-    <span class="brand-sub">DACH Program &amp; Release Management Job Pipeline</span>
+    <span class="brand-name">Job Radar</span>
+    <span class="brand-sub">Program, Product &amp; Quality Job Pipeline</span>
   </div>
   <div class="topbar-status" id="build-status">
     <span class="log">// connecting to data feed…</span>
@@ -59,13 +59,14 @@
     <!-- STAGE 1: OVERVIEW -->
     <section id="stage-overview" class="stage active">
       <h1>Program, Product &amp; Quality: who's hiring in DACH?</h1>
-      <p class="lede">Every day, postings for program, release, product, PMO, delivery, quality, change and agile-leadership roles across Germany, Austria and Switzerland are pulled from Adzuna and re-aggregated here.</p>
+      <p class="lede">Every day, postings for program, release, product, PMO, delivery, quality, change and agile-leadership roles across Germany, Austria, Switzerland and the Netherlands are pulled from Adzuna and re-aggregated here.</p>
 
       <div class="cards" id="summary-cards">
         <div class="card"><span class="card-value" id="stat-total">—</span><span class="card-label">postings tracked</span></div>
         <div class="card"><span class="card-value" id="stat-de">—</span><span class="card-label">Germany</span></div>
         <div class="card"><span class="card-value" id="stat-at">—</span><span class="card-label">Austria</span></div>
         <div class="card"><span class="card-value" id="stat-ch">—</span><span class="card-label">Switzerland</span></div>
+        <div class="card"><span class="card-value" id="stat-nl">—</span><span class="card-label">Netherlands</span></div>
       </div>
 
       <h2>Demand by role</h2>
@@ -212,6 +213,6 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<script src="assets/app.js?v=1.3"></script>
+<script src="assets/app.js?v=1.5"></script>
 </body>
 </html>
