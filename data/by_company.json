@@ -1,82 +1,102 @@
 [
   {
-    "company": "Roche",
-    "count": 34
+    "company": "Job-Room",
+    "count": 113
   },
   {
-    "company": "BMW Group",
-    "count": 32
+    "company": "mycareernow GmbH",
+    "count": 42
   },
   {
-    "company": "Allianz",
-    "count": 31
-  },
-  {
-    "company": "Zurich Insurance",
-    "count": 30
-  },
-  {
-    "company": "Continental",
-    "count": 29
-  },
-  {
-    "company": "T-Systems",
-    "count": 28
-  },
-  {
-    "company": "Munich Re",
-    "count": 28
-  },
-  {
-    "company": "UBS",
-    "count": 28
-  },
-  {
-    "company": "SAP",
-    "count": 27
-  },
-  {
-    "company": "Fiserv",
-    "count": 27
-  },
-  {
-    "company": "Bertelsmann",
-    "count": 26
-  },
-  {
-    "company": "Siemens",
-    "count": 25
-  },
-  {
-    "company": "Voith",
-    "count": 24
-  },
-  {
-    "company": "OMV",
-    "count": 24
-  },
-  {
-    "company": "Erste Group",
-    "count": 23
-  },
-  {
-    "company": "Deutsche Bank",
-    "count": 22
-  },
-  {
-    "company": "Sopra Steria",
-    "count": 22
-  },
-  {
-    "company": "Bosch",
+    "company": "Bjak",
     "count": 21
   },
   {
-    "company": "Capgemini",
-    "count": 20
+    "company": "KIND GmbH & Co. KG",
+    "count": 14
   },
   {
-    "company": "Nestle",
-    "count": 18
+    "company": "CGM",
+    "count": 12
+  },
+  {
+    "company": "FERCHAU GmbH",
+    "count": 12
+  },
+  {
+    "company": "PricewaterhouseCoopers",
+    "count": 11
+  },
+  {
+    "company": "Richemont",
+    "count": 11
+  },
+  {
+    "company": "Lam Research",
+    "count": 10
+  },
+  {
+    "company": "AT&S Austria Technologie & Systemtechnik AG",
+    "count": 10
+  },
+  {
+    "company": "Roche",
+    "count": 10
+  },
+  {
+    "company": "Passion for People GmbH",
+    "count": 9
+  },
+  {
+    "company": "Blockstream",
+    "count": 9
+  },
+  {
+    "company": "HENSOLDT",
+    "count": 8
+  },
+  {
+    "company": "Gi Group Outsourcing Deutschland GmbH",
+    "count": 8
+  },
+  {
+    "company": "Scheidt & Bachmann Energy Retail Solutions GmbH",
+    "count": 7
+  },
+  {
+    "company": "MVZ Labor Ravensburg - Labor Dr. Gärtner",
+    "count": 7
+  },
+  {
+    "company": "SThree Germany",
+    "count": 7
+  },
+  {
+    "company": "WITRON Service GmbH & Co. KG",
+    "count": 7
+  },
+  {
+    "company": "Unknown",
+    "count": 7
+  },
+  {
+    "company": "AT & S Austria Technologie & Systemtechnik Aktiengesellschaft",
+    "count": 7
+  },
+  {
+    "company": "GE Vernova",
+    "count": 7
+  },
+  {
+    "company": "Innio",
+    "count": 7
+  },
+  {
+    "company": "Wüstenrot Gruppe",
+    "count": 7
+  },
+  {
+    "company": "XXXLdigital - Part of XXXL Group",
+    "count": 7
   }
 ]
