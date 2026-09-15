@@ -396,9 +396,9 @@ td a:hover { color: var(--accent-signal); text-decoration: underline; }
     border-bottom: 1px solid var(--border);
     padding: 1rem 1rem 0.5rem;
   }
-  .rail-list { display: flex; overflow-x: auto; gap: 0.5rem; -webkit-overflow-scrolling: touch; }
+  .rail-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
   .rail-list::before { display: none; }
-  .rail-item { padding: 0.4rem 0.6rem; flex-shrink: 0; }
+  .rail-item { padding: 0.4rem 0.6rem; }
   .rail-label { white-space: nowrap; }
   .content { padding: 1.5rem 1.25rem 3rem; }
   .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }

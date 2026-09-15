@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-09-15T19:36:56+00:00",
-  "total_postings": 1725,
+  "last_updated": "2026-09-15T19:29:07Z",
+  "total_postings": 519,
   "by_country": {
-    "Germany": 727,
-    "Austria": 400,
-    "Switzerland": 598
+    "Germany": 261,
+    "Austria": 90,
+    "Switzerland": 168
   },
   "roles_tracked": [
     "Program Manager",
@@ -22,5 +22,6 @@
     "Product Manager",
     "Quality Manager",
     "Quality Engineer"
-  ]
+  ],
+  "is_sample_data": true
 }
