@@ -1,0 +1,23 @@
+{
+  "last_updated": "2026-09-08T12:47:48Z",
+  "total_postings": 466,
+  "by_country": {
+    "Germany": 266,
+    "Austria": 104,
+    "Switzerland": 96
+  },
+  "roles_tracked": [
+    "Program Manager",
+    "Release Manager",
+    "PMO",
+    "Project Manager",
+    "Delivery Manager",
+    "Change Manager",
+    "Agile Coach",
+    "Scrum Master",
+    "Release Train Engineer",
+    "Portfolio Manager",
+    "Transformation Manager"
+  ],
+  "is_sample_data": true
+}

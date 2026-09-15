@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Release Radar — DACH Program &amp; Release Management Job Pipeline</title>
+<meta name="description" content="Daily-tracked demand for Program, Release, PMO and Delivery Management roles across Germany, Austria and Switzerland.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-brand">
+    <span class="dot" id="build-dot" aria-hidden="true"></span>
+    <span class="brand-name">Release Radar</span>
+    <span class="brand-sub">DACH Program &amp; Release Management Job Pipeline</span>
+  </div>
+  <div class="topbar-status" id="build-status">
+    <span class="log">// connecting to data feed…</span>
+  </div>
+</header>
+
+<div class="shell">
+
+  <nav class="rail" aria-label="Pipeline stages">
+    <ol class="rail-list">
+      <li data-stage="overview" class="rail-item active">
+        <span class="rail-marker">01</span>
+        <span class="rail-label">Overview</span>
+      </li>
+      <li data-stage="map" class="rail-item">
+        <span class="rail-marker">02</span>
+        <span class="rail-label">Map</span>
+      </li>
+      <li data-stage="cities" class="rail-item">
+        <span class="rail-marker">03</span>
+        <span class="rail-label">Compare cities</span>
+      </li>
+      <li data-stage="companies" class="rail-item">
+        <span class="rail-marker">04</span>
+        <span class="rail-label">Companies</span>
+      </li>
+      <li data-stage="limitations" class="rail-item">
+        <span class="rail-marker">05</span>
+        <span class="rail-label">Limitations</span>
+      </li>
+    </ol>
+  </nav>
+
+  <main class="content">
+
+    <!-- STAGE 1: OVERVIEW -->
+    <section id="stage-overview" class="stage active">
+      <h1>How live is the DACH PM / release-management market?</h1>
+      <p class="lede">Every day, postings for program, release, PMO, delivery, change and agile-leadership roles across Germany, Austria and Switzerland are pulled from Adzuna and re-aggregated here.</p>
+
+      <div class="cards" id="summary-cards">
+        <div class="card"><span class="card-value" id="stat-total">—</span><span class="card-label">postings tracked</span></div>
+        <div class="card"><span class="card-value" id="stat-de">—</span><span class="card-label">Germany</span></div>
+        <div class="card"><span class="card-value" id="stat-at">—</span><span class="card-label">Austria</span></div>
+        <div class="card"><span class="card-value" id="stat-ch">—</span><span class="card-label">Switzerland</span></div>
+      </div>
+
+      <h2>Demand by role</h2>
+      <p class="hint">Bar length = live postings. Label = average days a posting has stayed listed (a proxy for staleness, not confirmed time-to-fill — see Limitations).</p>
+      <div class="panel">
+        <canvas id="chart-roles" height="110"></canvas>
+      </div>
+    </section>
+
+    <!-- STAGE 2: MAP -->
+    <section id="stage-map" class="stage">
+      <h1>Where are the roles?</h1>
+      <p class="lede">Bubble size = number of live postings in that city. Filter to a single role to see where it concentrates.</p>
+      <div class="controls">
+        <label for="map-role-filter">Role</label>
+        <select id="map-role-filter"><option value="__all__">All roles</option></select>
+      </div>
+      <div id="map" class="panel map-panel"></div>
+      <div class="panel table-panel">
+        <table id="city-table">
+          <thead><tr><th>City</th><th>Country</th><th>Listings</th><th>Avg. days open</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- STAGE 3: COMPARE CITIES -->
+    <section id="stage-cities" class="stage">
+      <h1>Compare two cities head-to-head</h1>
+      <p class="lede">Pick any two cities and, optionally, a single role to narrow the comparison. Small cities are noisy — treat single-digit counts as directional.</p>
+      <div class="controls compare-controls">
+        <div>
+          <label for="city-a">City A</label>
+          <select id="city-a"></select>
+        </div>
+        <div>
+          <label for="city-b">City B</label>
+          <select id="city-b"></select>
+        </div>
+        <div>
+          <label for="compare-role">Role</label>
+          <select id="compare-role"><option value="__all__">All roles</option></select>
+        </div>
+      </div>
+      <div class="compare-grid" id="compare-grid"></div>
+    </section>
+
+    <!-- STAGE 4: COMPANIES -->
+    <section id="stage-companies" class="stage">
+      <h1>Which companies are hiring most?</h1>
+      <p class="lede">Top employers by number of live postings across all tracked roles and countries.</p>
+      <div class="panel">
+        <canvas id="chart-companies" height="140"></canvas>
+      </div>
+    </section>
+
+    <!-- STAGE 5: LIMITATIONS -->
+    <section id="stage-limitations" class="stage">
+      <h1>Limitations of this tracker</h1>
+      <div class="panel limitations-panel">
+        <ul class="limitations-list">
+          <li><strong>Days-open is a proxy, not a confirmed fill time.</strong> Adzuna's API returns when a posting was first indexed, not when it closes or fills. "Days open" here means "days since Adzuna first saw it," which will overstate true time-to-fill for postings that are relisted, and understate it for postings Adzuna indexed late.</li>
+          <li><strong>Keyword matching, not semantic role classification.</strong> Each role bucket is a free-text search term (e.g. "release manager") matched against title and description. A senior title with an unconventional name may be missed; a junior role that happens to mention "PMO" in passing may be over-counted.</li>
+          <li><strong>Coverage depends on what Adzuna indexes.</strong> Adzuna aggregates from job boards and employer sites but does not capture every posting — LinkedIn-only or recruiter-exclusive listings are frequently absent.</li>
+          <li><strong>City assignment uses the posting's stated location area,</strong> not always the exact office; remote-first postings may cluster around a nominal HQ city.</li>
+          <li><strong>Small cities and small role buckets are noisy.</strong> A city or role with under ~10 postings can shift a lot day to day and shouldn't be read as a trend.</li>
+          <li><strong>Snapshot, not a historical series (yet).</strong> Each daily sync overwrites the previous day's aggregates rather than retaining full history, so this shows current-state demand, not week-over-week trend lines.</li>
+          <li><strong>Salary figures are sparse.</strong> Many DACH postings omit salary information entirely, so any salary-based cut would be built on a small, self-selecting subset.</li>
+        </ul>
+      </div>
+      <p class="footnote">Data from <a href="https://developer.adzuna.com" target="_blank" rel="noopener">Adzuna</a>. Pipeline runs daily via GitHub Actions. Built by Sujoy Guha.</p>
+    </section>
+
+  </main>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

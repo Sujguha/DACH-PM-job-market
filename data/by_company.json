@@ -1,0 +1,82 @@
+[
+  {
+    "company": "Siemens",
+    "count": 32
+  },
+  {
+    "company": "Munich Re",
+    "count": 28
+  },
+  {
+    "company": "Zurich Insurance",
+    "count": 27
+  },
+  {
+    "company": "Roche",
+    "count": 26
+  },
+  {
+    "company": "SAP",
+    "count": 26
+  },
+  {
+    "company": "Capgemini",
+    "count": 25
+  },
+  {
+    "company": "Erste Group",
+    "count": 24
+  },
+  {
+    "company": "Allianz",
+    "count": 24
+  },
+  {
+    "company": "Fiserv",
+    "count": 24
+  },
+  {
+    "company": "Sopra Steria",
+    "count": 23
+  },
+  {
+    "company": "OMV",
+    "count": 23
+  },
+  {
+    "company": "UBS",
+    "count": 23
+  },
+  {
+    "company": "BMW Group",
+    "count": 21
+  },
+  {
+    "company": "Continental",
+    "count": 21
+  },
+  {
+    "company": "Bosch",
+    "count": 21
+  },
+  {
+    "company": "Bertelsmann",
+    "count": 20
+  },
+  {
+    "company": "Nestle",
+    "count": 20
+  },
+  {
+    "company": "T-Systems",
+    "count": 20
+  },
+  {
+    "company": "Deutsche Bank",
+    "count": 19
+  },
+  {
+    "company": "Voith",
+    "count": 19
+  }
+]

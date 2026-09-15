@@ -1,0 +1,112 @@
+[
+  {
+    "role": "Project Manager",
+    "count": 70,
+    "avg_days_open": 41.9,
+    "by_country": {
+      "Germany": 36,
+      "Austria": 19,
+      "Switzerland": 15
+    }
+  },
+  {
+    "role": "Release Manager",
+    "count": 67,
+    "avg_days_open": 37.5,
+    "by_country": {
+      "Germany": 36,
+      "Austria": 17,
+      "Switzerland": 14
+    }
+  },
+  {
+    "role": "Program Manager",
+    "count": 66,
+    "avg_days_open": 39.0,
+    "by_country": {
+      "Germany": 36,
+      "Austria": 11,
+      "Switzerland": 19
+    }
+  },
+  {
+    "role": "PMO",
+    "count": 58,
+    "avg_days_open": 39.5,
+    "by_country": {
+      "Germany": 37,
+      "Austria": 15,
+      "Switzerland": 6
+    }
+  },
+  {
+    "role": "Delivery Manager",
+    "count": 54,
+    "avg_days_open": 41.3,
+    "by_country": {
+      "Germany": 31,
+      "Austria": 11,
+      "Switzerland": 12
+    }
+  },
+  {
+    "role": "Transformation Manager",
+    "count": 36,
+    "avg_days_open": 42.4,
+    "by_country": {
+      "Germany": 26,
+      "Austria": 6,
+      "Switzerland": 4
+    }
+  },
+  {
+    "role": "Scrum Master",
+    "count": 30,
+    "avg_days_open": 37.5,
+    "by_country": {
+      "Germany": 15,
+      "Austria": 4,
+      "Switzerland": 11
+    }
+  },
+  {
+    "role": "Change Manager",
+    "count": 22,
+    "avg_days_open": 34.9,
+    "by_country": {
+      "Germany": 15,
+      "Austria": 4,
+      "Switzerland": 3
+    }
+  },
+  {
+    "role": "Agile Coach",
+    "count": 22,
+    "avg_days_open": 37.8,
+    "by_country": {
+      "Germany": 12,
+      "Austria": 6,
+      "Switzerland": 4
+    }
+  },
+  {
+    "role": "Release Train Engineer",
+    "count": 21,
+    "avg_days_open": 34.2,
+    "by_country": {
+      "Germany": 11,
+      "Austria": 3,
+      "Switzerland": 7
+    }
+  },
+  {
+    "role": "Portfolio Manager",
+    "count": 20,
+    "avg_days_open": 37.2,
+    "by_country": {
+      "Germany": 11,
+      "Austria": 8,
+      "Switzerland": 1
+    }
+  }
+]
