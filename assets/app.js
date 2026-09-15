@@ -165,9 +165,10 @@ function populateRoleFilter(select, byRole, includeAllLabel) {
 
 function initMap(byCity) {
   map = L.map("map", { scrollWheelZoom: false }).setView([48.5, 10.5], 5);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-    attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-    maxZoom: 12,
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; OpenStreetMap contributors',
+    maxZoom: 19,
+    subdomains: "abc",
   }).addTo(map);
   markerLayer = L.layerGroup().addTo(map);
   drawMarkers(byCity);
