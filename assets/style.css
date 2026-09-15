@@ -1,13 +1,13 @@
 :root {
-  --bg: #0D1117;
-  --panel: #12181F;
-  --panel-alt: #171E27;
-  --border: #232B33;
-  --text: #E6EDF3;
-  --text-dim: #8B98A5;
-  --accent-live: #3FB950;
-  --accent-stale: #D29922;
-  --accent-signal: #58A6FF;
+  --bg: #F6F8FA;
+  --panel: #FFFFFF;
+  --panel-alt: #F0F2F5;
+  --border: #D7DEE3;
+  --text: #1F2328;
+  --text-dim: #57606A;
+  --accent-live: #1A7F37;
+  --accent-stale: #9A6700;
+  --accent-signal: #0969DA;
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
@@ -33,7 +33,7 @@ a { color: var(--accent-signal); }
   gap: 1rem;
   padding: 0.9rem 1.5rem;
   border-bottom: 1px solid var(--border);
-  background: linear-gradient(180deg, #0F151C 0%, #0D1117 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #F6F8FA 100%);
   flex-wrap: wrap;
 }
 
@@ -136,7 +136,7 @@ a { color: var(--accent-signal); }
 .rail-item.active .rail-marker {
   border-color: var(--accent-live);
   color: var(--accent-live);
-  box-shadow: 0 0 0 3px rgba(63, 185, 80, 0.12);
+  box-shadow: 0 0 0 3px rgba(26, 127, 55, 0.12);
 }
 
 .content {
