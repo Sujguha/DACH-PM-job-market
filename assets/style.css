@@ -219,6 +219,12 @@ h2 {
 .map-panel { padding: 0; overflow: hidden; height: 420px; }
 #map { height: 420px; }
 
+.chart-wrap { position: relative; height: 340px; }
+.chart-wrap-tall { height: 380px; }
+
+.table-panel { overflow-x: auto; padding: 0.5rem 1rem 1rem; }
+.table-panel table { min-width: 480px; }
+
 /* ---------- Controls ---------- */
 .controls {
   display: flex;
@@ -267,8 +273,6 @@ th {
 }
 
 td.num, th.num { text-align: right; font-family: var(--font-mono); }
-
-.table-panel { padding: 0.5rem 1rem 1rem; }
 
 .role-dot {
   display: inline-block;
@@ -389,12 +393,50 @@ td a:hover { color: var(--accent-signal); text-decoration: underline; }
     border-bottom: 1px solid var(--border);
     padding: 1rem 1rem 0.5rem;
   }
-  .rail-list { display: flex; overflow-x: auto; gap: 0.5rem; }
+  .rail-list { display: flex; overflow-x: auto; gap: 0.5rem; -webkit-overflow-scrolling: touch; }
   .rail-list::before { display: none; }
   .rail-item { padding: 0.4rem 0.6rem; flex-shrink: 0; }
+  .rail-label { white-space: nowrap; }
   .content { padding: 1.5rem 1.25rem 3rem; }
   .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .compare-grid { grid-template-columns: 1fr; }
+
+  .topbar { padding: 0.75rem 1rem; }
+  .brand-sub { display: none; }
+  .topbar-status .log { font-size: 0.7rem; word-break: break-word; }
+
+  h1 { font-size: 1.35rem; }
+
+  .controls, .postings-controls, .compare-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+  .controls > div, .postings-controls > div, .compare-controls > div {
+    min-width: 0;
+    width: 100%;
+  }
+  .controls select, .postings-controls select, .compare-controls select {
+    width: 100%;
+    min-width: 0;
+  }
+  .btn-clear { width: 100%; }
+
+  .map-panel, #map { height: 300px; }
+  .chart-wrap { height: 280px; }
+  .chart-wrap-tall { height: 320px; }
+}
+
+@media (max-width: 480px) {
+  .content { padding: 1.25rem 1rem 2.5rem; }
+  h1 { font-size: 1.2rem; }
+  .card-value { font-size: 1.35rem; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; }
+  .pagination { justify-content: space-between; }
+  .pagination .page-info { order: 3; width: 100%; text-align: center; }
+  .map-panel, #map { height: 260px; }
+  .chart-wrap { height: 240px; }
+  .chart-wrap-tall { height: 280px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -81,6 +81,7 @@ function renderRoleChart(byRole) {
     },
     options: {
       indexAxis: "y",
+      maintainAspectRatio: false,
       onClick: (evt) => {
         const points = chart.getElementsAtEventForMode(evt, "nearest", { intersect: true }, true);
         if (points.length) {
@@ -129,6 +130,7 @@ function renderCompanyChart(byCompany) {
     },
     options: {
       indexAxis: "y",
+      maintainAspectRatio: false,
       plugins: { legend: { display: false } },
       scales: {
         x: { grid: { color: COLORS.grid }, ticks: { color: COLORS.text } },
