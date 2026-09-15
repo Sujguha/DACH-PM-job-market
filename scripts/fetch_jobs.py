@@ -75,6 +75,17 @@ def days_open(created_iso: str) -> float:
     return round((now - created).total_seconds() / 86400, 1)
 
 
+def guess_level(title: str) -> str:
+    """Rough seniority guess from the job title text, since Adzuna doesn't
+    return a structured seniority field."""
+    t = (title or "").lower()
+    if any(k in t for k in ["junior", "werkstudent", "intern", "trainee", "entry", "praktikant"]):
+        return "Junior"
+    if any(k in t for k in ["senior", "lead", "head", "principal", "director", "chief", "sr."]):
+        return "Senior"
+    return "Mid"
+
+
 def main():
     postings_by_id = {}
 
@@ -106,6 +117,7 @@ def main():
                     "created": created,
                     "days_open": days_open(created) if created else None,
                     "role": role_label,
+                    "level": guess_level(job.get("title")),
                     "url": job.get("redirect_url"),
                     "salary_min": job.get("salary_min"),
                     "salary_max": job.get("salary_max"),

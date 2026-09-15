@@ -35,16 +35,20 @@
         <span class="rail-marker">02</span>
         <span class="rail-label">Map</span>
       </li>
-      <li data-stage="cities" class="rail-item">
+      <li data-stage="postings" class="rail-item">
         <span class="rail-marker">03</span>
+        <span class="rail-label">Postings</span>
+      </li>
+      <li data-stage="cities" class="rail-item">
+        <span class="rail-marker">04</span>
         <span class="rail-label">Compare cities</span>
       </li>
       <li data-stage="companies" class="rail-item">
-        <span class="rail-marker">04</span>
+        <span class="rail-marker">05</span>
         <span class="rail-label">Companies</span>
       </li>
       <li data-stage="limitations" class="rail-item">
-        <span class="rail-marker">05</span>
+        <span class="rail-marker">06</span>
         <span class="rail-label">Limitations</span>
       </li>
     </ol>
@@ -65,7 +69,7 @@
       </div>
 
       <h2>Demand by role</h2>
-      <p class="hint">Bar length = live postings. Label = average days a posting has stayed listed (a proxy for staleness, not confirmed time-to-fill — see Limitations).</p>
+      <p class="hint">Bar length = live postings, colored by role. Click a bar to see that role's individual postings. Label = average days a posting has stayed listed (a proxy for staleness, not confirmed time-to-fill — see Limitations).</p>
       <div class="panel">
         <canvas id="chart-roles" height="110"></canvas>
       </div>
@@ -86,6 +90,64 @@
           <tbody></tbody>
         </table>
       </div>
+    </section>
+
+    <!-- STAGE: POSTINGS -->
+    <section id="stage-postings" class="stage">
+      <h1>Browse live postings</h1>
+      <p class="lede">Filter and sort individual postings, or click a bar in the Overview role chart to jump straight to that role's list.</p>
+      <div class="controls postings-controls">
+        <div>
+          <label for="post-role">Role</label>
+          <select id="post-role"><option value="__all__">All roles</option></select>
+        </div>
+        <div>
+          <label for="post-country">Country</label>
+          <select id="post-country"><option value="__all__">All countries</option></select>
+        </div>
+        <div>
+          <label for="post-city">City</label>
+          <select id="post-city"><option value="__all__">All cities</option></select>
+        </div>
+        <div>
+          <label for="post-level">Level</label>
+          <select id="post-level">
+            <option value="__all__">All levels</option>
+            <option value="Senior">Senior</option>
+            <option value="Mid">Mid</option>
+            <option value="Junior">Junior</option>
+          </select>
+        </div>
+        <div>
+          <label for="post-sort">Sort</label>
+          <select id="post-sort">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="days_desc">Days open (high to low)</option>
+          </select>
+        </div>
+        <div>
+          <label>&nbsp;</label>
+          <button id="post-clear" class="btn-clear" type="button">Clear filters</button>
+        </div>
+      </div>
+      <p class="hint" id="post-count"></p>
+      <div class="panel table-panel">
+        <table id="postings-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Employer</th>
+              <th>City</th>
+              <th>Role</th>
+              <th>Level</th>
+              <th class="num">Days open</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="pagination" id="postings-pagination"></div>
     </section>
 
     <!-- STAGE 3: COMPARE CITIES -->

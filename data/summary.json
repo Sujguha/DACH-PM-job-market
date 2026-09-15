@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-09-15T12:45:52+00:00",
-  "total_postings": 1163,
+  "last_updated": "2026-09-15T12:52:50Z",
+  "total_postings": 508,
   "by_country": {
-    "Germany": 527,
-    "Austria": 230,
-    "Switzerland": 406
+    "Germany": 306,
+    "Austria": 89,
+    "Switzerland": 113
   },
   "roles_tracked": [
     "Program Manager",
@@ -18,5 +18,6 @@
     "Release Train Engineer",
     "Portfolio Manager",
     "Transformation Manager"
-  ]
+  ],
+  "is_sample_data": true
 }

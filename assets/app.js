@@ -1,4 +1,4 @@
-const DATA_FILES = ["summary", "by_role", "by_city", "city_role", "by_company"];
+const DATA_FILES = ["summary", "by_role", "by_city", "city_role", "by_company", "postings"];
 
 const COLORS = {
   live: "#1A7F37",
@@ -8,7 +8,35 @@ const COLORS = {
   text: "#57606A",
 };
 
+// Fixed per-role colors so they stay consistent across the role chart,
+// the postings table dots, and re-renders as the data changes day to day.
+const ROLE_COLORS = {
+  "Program Manager": "#4E79A7",
+  "Release Manager": "#F28E2B",
+  "PMO": "#E15759",
+  "Project Manager": "#76B7B2",
+  "Delivery Manager": "#59A14F",
+  "Change Manager": "#EDC948",
+  "Agile Coach": "#B07AA1",
+  "Scrum Master": "#FF9DA7",
+  "Release Train Engineer": "#9C755F",
+  "Portfolio Manager": "#BAB0AC",
+  "Transformation Manager": "#86BCB6",
+};
+const FALLBACK_PALETTE = ["#4E79A7","#F28E2B","#E15759","#76B7B2","#59A14F","#EDC948","#B07AA1","#FF9DA7","#9C755F","#BAB0AC","#86BCB6"];
+
+function colorForRole(role) {
+  return ROLE_COLORS[role] || COLORS.signal;
+}
+
+function colorForIndex(i) {
+  return FALLBACK_PALETTE[i % FALLBACK_PALETTE.length];
+}
+
 let DATA = {};
+let map, markerLayer;
+let postingsPage = 1;
+const POSTINGS_PAGE_SIZE = 10;
 
 async function loadData() {
   const entries = await Promise.all(
@@ -38,7 +66,7 @@ function renderCards(summary) {
 
 function renderRoleChart(byRole) {
   const ctx = document.getElementById("chart-roles");
-  new Chart(ctx, {
+  const chart = new Chart(ctx, {
     type: "bar",
     data: {
       labels: byRole.map((r) => r.role),
@@ -46,20 +74,31 @@ function renderRoleChart(byRole) {
         {
           label: "Live postings",
           data: byRole.map((r) => r.count),
-          backgroundColor: COLORS.live,
+          backgroundColor: byRole.map((r) => colorForRole(r.role)),
           borderRadius: 3,
         },
       ],
     },
     options: {
       indexAxis: "y",
+      onClick: (evt) => {
+        const points = chart.getElementsAtEventForMode(evt, "nearest", { intersect: true }, true);
+        if (points.length) {
+          const role = byRole[points[0].index].role;
+          goToPostings({ role });
+        }
+      },
+      onHover: (evt, elements) => {
+        evt.native.target.style.cursor = elements.length ? "pointer" : "default";
+      },
       plugins: {
         legend: { display: false },
         tooltip: {
           callbacks: {
             afterLabel: (item) => {
               const r = byRole[item.dataIndex];
-              return r.avg_days_open != null ? `avg ${r.avg_days_open}d open` : "";
+              const extra = r.avg_days_open != null ? `avg ${r.avg_days_open}d open` : "";
+              return [extra, "Click to see postings"].filter(Boolean);
             },
           },
         },
@@ -83,7 +122,7 @@ function renderCompanyChart(byCompany) {
         {
           label: "Live postings",
           data: top.map((c) => c.count),
-          backgroundColor: COLORS.signal,
+          backgroundColor: top.map((_, i) => colorForIndex(i)),
           borderRadius: 3,
         },
       ],
@@ -123,8 +162,6 @@ function populateRoleFilter(select, byRole, includeAllLabel) {
   select.innerHTML = `<option value="__all__">${includeAllLabel}</option>` +
     byRole.map((r) => `<option value="${r.role}">${r.role}</option>`).join("");
 }
-
-let map, markerLayer;
 
 function initMap(byCity) {
   map = L.map("map", { scrollWheelZoom: false }).setView([48.5, 10.5], 5);
@@ -219,18 +256,147 @@ function setupCompareStage(data) {
   render();
 }
 
-function setupNav() {
-  const items = document.querySelectorAll(".rail-item");
-  items.forEach((item) => {
-    item.addEventListener("click", () => {
-      items.forEach((i) => i.classList.remove("active"));
-      item.classList.add("active");
-      document.querySelectorAll(".stage").forEach((s) => s.classList.remove("active"));
-      document.getElementById(`stage-${item.dataset.stage}`).classList.add("active");
-      if (item.dataset.stage === "map" && map) {
-        setTimeout(() => map.invalidateSize(), 50);
-      }
+// ---------- Postings browser ----------
+
+function setupPostingsStage(data) {
+  const roleSelect = document.getElementById("post-role");
+  const countrySelect = document.getElementById("post-country");
+  const citySelect = document.getElementById("post-city");
+  const levelSelect = document.getElementById("post-level");
+  const sortSelect = document.getElementById("post-sort");
+  const clearBtn = document.getElementById("post-clear");
+
+  populateRoleFilter(roleSelect, data.by_role, "All roles");
+
+  const countries = [...new Set(data.postings.map((p) => p.country))].sort();
+  countrySelect.innerHTML =
+    `<option value="__all__">All countries</option>` +
+    countries.map((c) => `<option value="${c}">${c}</option>`).join("");
+
+  const cities = [...new Set(data.postings.map((p) => p.city))].sort();
+  citySelect.innerHTML =
+    `<option value="__all__">All cities</option>` +
+    cities.map((c) => `<option value="${c}">${c}</option>`).join("");
+
+  function currentFilters() {
+    return {
+      role: roleSelect.value,
+      country: countrySelect.value,
+      city: citySelect.value,
+      level: levelSelect.value,
+      sort: sortSelect.value,
+    };
+  }
+
+  function filteredPostings() {
+    const f = currentFilters();
+    let list = data.postings.filter((p) => {
+      if (f.role !== "__all__" && p.role !== f.role) return false;
+      if (f.country !== "__all__" && p.country !== f.country) return false;
+      if (f.city !== "__all__" && p.city !== f.city) return false;
+      if (f.level !== "__all__" && p.level !== f.level) return false;
+      return true;
     });
+    if (f.sort === "newest") list = list.slice().sort((a, b) => (b.created || "").localeCompare(a.created || ""));
+    else if (f.sort === "oldest") list = list.slice().sort((a, b) => (a.created || "").localeCompare(b.created || ""));
+    else if (f.sort === "days_desc") list = list.slice().sort((a, b) => (b.days_open ?? 0) - (a.days_open ?? 0));
+    return list;
+  }
+
+  function renderPage() {
+    const list = filteredPostings();
+    const totalPages = Math.max(1, Math.ceil(list.length / POSTINGS_PAGE_SIZE));
+    postingsPage = Math.min(Math.max(1, postingsPage), totalPages);
+
+    const start = (postingsPage - 1) * POSTINGS_PAGE_SIZE;
+    const pageItems = list.slice(start, start + POSTINGS_PAGE_SIZE);
+
+    document.getElementById("post-count").textContent = list.length
+      ? `Showing ${start + 1}-${Math.min(start + POSTINGS_PAGE_SIZE, list.length)} of ${list.length} postings · page ${postingsPage} of ${totalPages}`
+      : "No postings match these filters.";
+
+    const tbody = document.querySelector("#postings-table tbody");
+    tbody.innerHTML = pageItems
+      .map((p) => `<tr>
+        <td><a href="${p.url || "#"}" target="_blank" rel="noopener">${p.title}</a></td>
+        <td>${p.company}</td>
+        <td>${p.city}, ${p.country_code?.toUpperCase() || ""}</td>
+        <td class="role-cell"><span class="role-dot" style="background:${colorForRole(p.role)}"></span>${p.role}</td>
+        <td>${p.level || "—"}</td>
+        <td class="num" style="color:${daysColor(p.days_open)}">${p.days_open ?? "—"}</td>
+      </tr>`)
+      .join("");
+
+    renderPagination(totalPages);
+  }
+
+  function renderPagination(totalPages) {
+    const el = document.getElementById("postings-pagination");
+    const btn = (label, page, opts = {}) =>
+      `<button ${opts.disabled ? "disabled" : ""} ${opts.current ? 'class="current"' : ""} data-page="${page}">${label}</button>`;
+
+    let html = btn("‹ Prev", postingsPage - 1, { disabled: postingsPage <= 1 });
+    html += `<span class="page-info">Page ${postingsPage} of ${totalPages}</span>`;
+    html += btn("Next ›", postingsPage + 1, { disabled: postingsPage >= totalPages });
+    el.innerHTML = html;
+
+    el.querySelectorAll("button:not(:disabled)").forEach((b) => {
+      b.addEventListener("click", () => {
+        postingsPage = parseInt(b.dataset.page, 10);
+        renderPage();
+      });
+    });
+  }
+
+  [roleSelect, countrySelect, citySelect, levelSelect, sortSelect].forEach((el) =>
+    el.addEventListener("change", () => {
+      postingsPage = 1;
+      renderPage();
+    })
+  );
+
+  clearBtn.addEventListener("click", () => {
+    roleSelect.value = "__all__";
+    countrySelect.value = "__all__";
+    citySelect.value = "__all__";
+    levelSelect.value = "__all__";
+    sortSelect.value = "newest";
+    postingsPage = 1;
+    renderPage();
+  });
+
+  // Exposed so the Overview role chart can jump here with a role pre-selected.
+  window.__setPostingsFilter = (filters) => {
+    if (filters.role) roleSelect.value = filters.role;
+    postingsPage = 1;
+    renderPage();
+  };
+
+  renderPage();
+}
+
+function goToPostings(filters) {
+  activateStage("postings");
+  if (window.__setPostingsFilter) window.__setPostingsFilter(filters);
+}
+
+// ---------- Navigation ----------
+
+function activateStage(stageName) {
+  document.querySelectorAll(".rail-item").forEach((i) => i.classList.remove("active"));
+  const item = document.querySelector(`.rail-item[data-stage="${stageName}"]`);
+  if (item) item.classList.add("active");
+  document.querySelectorAll(".stage").forEach((s) => s.classList.remove("active"));
+  const stage = document.getElementById(`stage-${stageName}`);
+  if (stage) stage.classList.add("active");
+  if (stageName === "map" && map) {
+    setTimeout(() => map.invalidateSize(), 50);
+  }
+}
+
+function setupNav() {
+  document.querySelectorAll(".rail-item").forEach((item) => {
+    item.addEventListener("click", () => activateStage(item.dataset.stage));
   });
 }
 
@@ -244,6 +410,7 @@ async function init() {
     renderRoleChart(data.by_role);
     renderCompanyChart(data.by_company);
     setupMapStage(data);
+    setupPostingsStage(data);
     setupCompareStage(data);
   } catch (err) {
     document.querySelector(".topbar-status .log").textContent = `// data feed error: ${err.message}`;
