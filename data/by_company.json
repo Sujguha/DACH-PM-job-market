@@ -5,7 +5,7 @@
   },
   {
     "company": "mycareernow GmbH",
-    "count": 40
+    "count": 41
   },
   {
     "company": "KIND GmbH & Co. KG",
@@ -14,10 +14,6 @@
   {
     "company": "FERCHAU GmbH",
     "count": 12
-  },
-  {
-    "company": "Aareal Bank AG",
-    "count": 11
   },
   {
     "company": "PricewaterhouseCoopers",
@@ -32,6 +28,10 @@
     "count": 9
   },
   {
+    "company": "Gi Group Outsourcing Deutschland GmbH",
+    "count": 8
+  },
+  {
     "company": "Roche",
     "count": 8
   },
@@ -40,7 +40,19 @@
     "count": 8
   },
   {
-    "company": "Gi Group Outsourcing Deutschland GmbH",
+    "company": "Scheidt & Bachmann Energy Retail Solutions GmbH",
+    "count": 7
+  },
+  {
+    "company": "MVZ Labor Ravensburg - Labor Dr. Gärtner",
+    "count": 7
+  },
+  {
+    "company": "SThree Germany",
+    "count": 7
+  },
+  {
+    "company": "WITRON Service GmbH & Co. KG",
     "count": 7
   },
   {
@@ -48,23 +60,11 @@
     "count": 7
   },
   {
-    "company": "JD.COM",
-    "count": 6
-  },
-  {
     "company": "PLATH GmbH & Co. KG",
     "count": 6
   },
   {
-    "company": "MVZ Labor Ravensburg - Labor Dr. Gärtner",
-    "count": 6
-  },
-  {
-    "company": "g2 Recruitment",
-    "count": 6
-  },
-  {
-    "company": "WITRON Service GmbH & Co. KG",
+    "company": "HENSOLDT",
     "count": 6
   },
   {
@@ -88,15 +88,15 @@
     "count": 6
   },
   {
-    "company": "SThree Germany",
-    "count": 6
-  },
-  {
     "company": "Lonza",
     "count": 6
   },
   {
     "company": "ITech Consult AG",
     "count": 6
+  },
+  {
+    "company": "IT & Internet Karriere",
+    "count": 5
   }
 ]
