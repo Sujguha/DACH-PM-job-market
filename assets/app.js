@@ -1,11 +1,11 @@
 const DATA_FILES = ["summary", "by_role", "by_city", "city_role", "by_company"];
 
 const COLORS = {
-  live: "#3FB950",
-  stale: "#D29922",
-  signal: "#58A6FF",
-  grid: "#232B33",
-  text: "#8B98A5",
+  live: "#1A7F37",
+  stale: "#9A6700",
+  signal: "#0969DA",
+  grid: "#D7DEE3",
+  text: "#57606A",
 };
 
 let DATA = {};
@@ -128,7 +128,7 @@ let map, markerLayer;
 
 function initMap(byCity) {
   map = L.map("map", { scrollWheelZoom: false }).setView([48.5, 10.5], 5);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
     attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
     maxZoom: 12,
   }).addTo(map);
