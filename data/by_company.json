@@ -1,102 +1,102 @@
 [
   {
-    "company": "Zurich Insurance",
-    "count": 39
+    "company": "Job-Room",
+    "count": 121
   },
   {
-    "company": "BMW Group",
-    "count": 37
+    "company": "Synsel Techniek",
+    "count": 59
   },
   {
-    "company": "Deutsche Bank",
-    "count": 36
+    "company": "mycareernow GmbH",
+    "count": 42
   },
   {
-    "company": "Allianz",
-    "count": 35
-  },
-  {
-    "company": "SAP",
-    "count": 34
-  },
-  {
-    "company": "KLM",
-    "count": 33
-  },
-  {
-    "company": "Bertelsmann",
-    "count": 32
-  },
-  {
-    "company": "Roche",
-    "count": 30
-  },
-  {
-    "company": "Bosch",
-    "count": 30
-  },
-  {
-    "company": "Sopra Steria",
-    "count": 30
-  },
-  {
-    "company": "Fiserv",
-    "count": 29
-  },
-  {
-    "company": "Nestle",
-    "count": 29
-  },
-  {
-    "company": "Philips",
-    "count": 28
-  },
-  {
-    "company": "UBS",
-    "count": 28
-  },
-  {
-    "company": "Voith",
-    "count": 27
-  },
-  {
-    "company": "Heineken",
-    "count": 26
-  },
-  {
-    "company": "T-Systems",
-    "count": 25
-  },
-  {
-    "company": "Erste Group",
-    "count": 24
-  },
-  {
-    "company": "Continental",
-    "count": 24
-  },
-  {
-    "company": "Munich Re",
-    "count": 24
-  },
-  {
-    "company": "Capgemini",
-    "count": 24
-  },
-  {
-    "company": "ING",
-    "count": 22
-  },
-  {
-    "company": "OMV",
-    "count": 22
-  },
-  {
-    "company": "ASML",
+    "company": "Bjak",
     "count": 21
   },
   {
-    "company": "Siemens",
+    "company": "ASML",
     "count": 20
+  },
+  {
+    "company": "Unknown",
+    "count": 16
+  },
+  {
+    "company": "We ARE Recruitment Group",
+    "count": 15
+  },
+  {
+    "company": "PricewaterhouseCoopers",
+    "count": 14
+  },
+  {
+    "company": "CGI",
+    "count": 13
+  },
+  {
+    "company": "KIND GmbH & Co. KG",
+    "count": 12
+  },
+  {
+    "company": "CGM",
+    "count": 12
+  },
+  {
+    "company": "FERCHAU GmbH",
+    "count": 12
+  },
+  {
+    "company": "HENSOLDT",
+    "count": 11
+  },
+  {
+    "company": "Riverty",
+    "count": 11
+  },
+  {
+    "company": "Lam Research",
+    "count": 10
+  },
+  {
+    "company": "Bright Professionals",
+    "count": 10
+  },
+  {
+    "company": "CGI Nederland",
+    "count": 10
+  },
+  {
+    "company": "Passion for People GmbH",
+    "count": 9
+  },
+  {
+    "company": "AT&S Austria Technologie & Systemtechnik AG",
+    "count": 9
+  },
+  {
+    "company": "Roche",
+    "count": 9
+  },
+  {
+    "company": "Richemont",
+    "count": 9
+  },
+  {
+    "company": "Blockstream",
+    "count": 9
+  },
+  {
+    "company": "Gi Group Outsourcing Deutschland GmbH",
+    "count": 8
+  },
+  {
+    "company": "GE Vernova",
+    "count": 8
+  },
+  {
+    "company": "EIFFEL",
+    "count": 8
   }
 ]
