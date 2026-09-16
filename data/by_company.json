@@ -1,11 +1,11 @@
 [
   {
     "company": "Job-Room",
-    "count": 121
+    "count": 124
   },
   {
     "company": "Synsel Techniek",
-    "count": 59
+    "count": 54
   },
   {
     "company": "mycareernow GmbH",
@@ -56,11 +56,11 @@
     "count": 11
   },
   {
-    "company": "Lam Research",
-    "count": 10
+    "company": "Richemont",
+    "count": 11
   },
   {
-    "company": "Bright Professionals",
+    "company": "Lam Research",
     "count": 10
   },
   {
@@ -72,15 +72,7 @@
     "count": 9
   },
   {
-    "company": "AT&S Austria Technologie & Systemtechnik AG",
-    "count": 9
-  },
-  {
     "company": "Roche",
-    "count": 9
-  },
-  {
-    "company": "Richemont",
     "count": 9
   },
   {
@@ -88,7 +80,15 @@
     "count": 9
   },
   {
+    "company": "Bright Professionals",
+    "count": 9
+  },
+  {
     "company": "Gi Group Outsourcing Deutschland GmbH",
+    "count": 8
+  },
+  {
+    "company": "AT&S Austria Technologie & Systemtechnik AG",
     "count": 8
   },
   {
