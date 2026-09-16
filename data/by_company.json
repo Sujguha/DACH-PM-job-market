@@ -1,15 +1,15 @@
 [
   {
     "company": "Job-Room",
-    "count": 124
+    "count": 129
   },
   {
     "company": "Synsel Techniek",
-    "count": 54
+    "count": 56
   },
   {
     "company": "mycareernow GmbH",
-    "count": 42
+    "count": 25
   },
   {
     "company": "Bjak",
@@ -21,7 +21,7 @@
   },
   {
     "company": "Unknown",
-    "count": 16
+    "count": 15
   },
   {
     "company": "We ARE Recruitment Group",
@@ -32,6 +32,10 @@
     "count": 14
   },
   {
+    "company": "HENSOLDT",
+    "count": 13
+  },
+  {
     "company": "CGI",
     "count": 13
   },
@@ -40,27 +44,19 @@
     "count": 12
   },
   {
-    "company": "CGM",
-    "count": 12
-  },
-  {
     "company": "FERCHAU GmbH",
     "count": 12
   },
   {
-    "company": "HENSOLDT",
-    "count": 11
-  },
-  {
-    "company": "Riverty",
-    "count": 11
-  },
-  {
-    "company": "Richemont",
-    "count": 11
+    "company": "CGM",
+    "count": 10
   },
   {
     "company": "Lam Research",
+    "count": 10
+  },
+  {
+    "company": "Richemont",
     "count": 10
   },
   {
@@ -98,5 +94,9 @@
   {
     "company": "EIFFEL",
     "count": 8
+  },
+  {
+    "company": "PLATH GmbH & Co. KG",
+    "count": 7
   }
 ]
