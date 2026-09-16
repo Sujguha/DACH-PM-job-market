@@ -17,11 +17,12 @@ steps below to switch it over to live, auto-refreshing data.
 
 ```
 index.html                  the site
-assets/style.css            visual theme (light mode)
-assets/app.js                data loading, charts, map, comparator
+assets/style.css            visual theme (light + dark mode)
+assets/app.js                data loading, charts, map, comparator, search
 data/*.json                  the data the site reads (starts as sample data)
 scripts/fetch_jobs.py        pulls + aggregates from Adzuna into data/*.json
-.github/workflows/update-data.yml   runs the script daily and commits the result
+tests/test_fetch_jobs.py     pytest suite for the aggregation/classification logic
+.github/workflows/update-data.yml   runs the script (and tests) daily, commits the result
 ```
 
 ## 1. Get free Adzuna API credentials
@@ -132,6 +133,47 @@ show up in the data.
 ## Known limitations
 
 See the "Limitations" tab on the live site for the full list (days-open is
-a proxy, keyword-based role matching, Adzuna's coverage gaps, no historical
-trend series yet — each sync overwrites the prior snapshot). Worth reading
-before drawing strong conclusions from the numbers.
+a proxy, keyword-based role matching, Adzuna's coverage gaps, a short
+trend-history window). Worth reading before drawing strong conclusions from
+the numbers.
+
+## How this was built
+
+A weekend side project to learn a bit more end-to-end: a Python script
+(`scripts/fetch_jobs.py`) hits the free Adzuna Jobs API and aggregates
+results with the standard library, a GitHub Actions workflow runs it on a
+schedule and commits the output as plain JSON, and the site itself is
+vanilla HTML/CSS/JS (no framework, no build step) using Chart.js for charts
+and Leaflet + OpenStreetMap for the map — all free tiers, hosted on Netlify.
+Feedback and pull requests welcome; this is very much a learning project.
+
+## Running the tests
+
+```bash
+pip install pytest requests --break-system-packages
+ADZUNA_APP_ID=dummy ADZUNA_APP_KEY=dummy pytest tests/ -v
+```
+
+The tests cover the pure logic in `fetch_jobs.py` — level/job-type
+classification and the aggregation math — without making real API calls.
+They also run automatically as part of the daily GitHub Actions workflow,
+before the live fetch, so a broken change to the aggregation logic fails
+loudly instead of quietly corrupting the site's data.
+
+## New features (this version)
+
+- **Trend chart** — `history.json` accumulates one daily snapshot (last
+  ~90 days) so the Overview page can show total postings over time, not
+  just a current-state snapshot.
+- **Search** — free-text search over title/company on the Postings tab.
+- **"New today" filter** — flags and can filter to postings first seen in
+  the last 24 hours.
+- **Dark mode** — toggle in the top-right, remembered via local storage.
+- **Shareable filtered links** — Postings tab filters are reflected in the
+  URL, so you can copy/paste a link to a specific filtered view.
+- **Sync status visibility** — if a scheduled sync fails, `sync_status.json`
+  records it and the site notes that it's showing the last successful data
+  rather than silently going stale with no indication.
+- **Retry logic** — `fetch_page()` now retries transient failures (with
+  backoff) and specifically handles HTTP 429 rate-limit responses, instead
+  of giving up on the first hiccup.

@@ -1,0 +1,152 @@
+[
+  {
+    "date": "2026-09-01",
+    "total_postings": 668,
+    "by_country": {
+      "Germany": 243,
+      "Austria": 76,
+      "Switzerland": 176,
+      "Netherlands": 172
+    }
+  },
+  {
+    "date": "2026-09-02",
+    "total_postings": 675,
+    "by_country": {
+      "Germany": 246,
+      "Austria": 77,
+      "Switzerland": 178,
+      "Netherlands": 174
+    }
+  },
+  {
+    "date": "2026-09-03",
+    "total_postings": 671,
+    "by_country": {
+      "Germany": 244,
+      "Austria": 77,
+      "Switzerland": 177,
+      "Netherlands": 173
+    }
+  },
+  {
+    "date": "2026-09-04",
+    "total_postings": 668,
+    "by_country": {
+      "Germany": 243,
+      "Austria": 76,
+      "Switzerland": 176,
+      "Netherlands": 172
+    }
+  },
+  {
+    "date": "2026-09-05",
+    "total_postings": 680,
+    "by_country": {
+      "Germany": 247,
+      "Austria": 78,
+      "Switzerland": 179,
+      "Netherlands": 176
+    }
+  },
+  {
+    "date": "2026-09-06",
+    "total_postings": 678,
+    "by_country": {
+      "Germany": 247,
+      "Austria": 77,
+      "Switzerland": 179,
+      "Netherlands": 175
+    }
+  },
+  {
+    "date": "2026-09-07",
+    "total_postings": 684,
+    "by_country": {
+      "Germany": 249,
+      "Austria": 78,
+      "Switzerland": 180,
+      "Netherlands": 177
+    }
+  },
+  {
+    "date": "2026-09-08",
+    "total_postings": 680,
+    "by_country": {
+      "Germany": 247,
+      "Austria": 78,
+      "Switzerland": 179,
+      "Netherlands": 176
+    }
+  },
+  {
+    "date": "2026-09-09",
+    "total_postings": 691,
+    "by_country": {
+      "Germany": 251,
+      "Austria": 79,
+      "Switzerland": 182,
+      "Netherlands": 178
+    }
+  },
+  {
+    "date": "2026-09-10",
+    "total_postings": 692,
+    "by_country": {
+      "Germany": 252,
+      "Austria": 79,
+      "Switzerland": 183,
+      "Netherlands": 179
+    }
+  },
+  {
+    "date": "2026-09-11",
+    "total_postings": 688,
+    "by_country": {
+      "Germany": 250,
+      "Austria": 79,
+      "Switzerland": 181,
+      "Netherlands": 178
+    }
+  },
+  {
+    "date": "2026-09-12",
+    "total_postings": 685,
+    "by_country": {
+      "Germany": 249,
+      "Austria": 78,
+      "Switzerland": 181,
+      "Netherlands": 177
+    }
+  },
+  {
+    "date": "2026-09-13",
+    "total_postings": 693,
+    "by_country": {
+      "Germany": 252,
+      "Austria": 79,
+      "Switzerland": 183,
+      "Netherlands": 179
+    }
+  },
+  {
+    "date": "2026-09-14",
+    "total_postings": 701,
+    "by_country": {
+      "Germany": 255,
+      "Austria": 80,
+      "Switzerland": 185,
+      "Netherlands": 181
+    }
+  },
+  {
+    "date": "2026-09-15",
+    "total_postings": 709,
+    "by_country": {
+      "Germany": 258,
+      "Austria": 81,
+      "Switzerland": 187,
+      "Netherlands": 183
+    }
+  }
+]

@@ -1,102 +1,102 @@
 [
   {
-    "company": "Job-Room",
-    "count": 123
+    "company": "Zurich Insurance",
+    "count": 39
   },
   {
-    "company": "Synsel Techniek",
-    "count": 60
+    "company": "BMW Group",
+    "count": 37
   },
   {
-    "company": "mycareernow GmbH",
-    "count": 42
+    "company": "Deutsche Bank",
+    "count": 36
   },
   {
-    "company": "Bjak",
-    "count": 21
+    "company": "Allianz",
+    "count": 35
   },
   {
-    "company": "ASML",
-    "count": 19
+    "company": "SAP",
+    "count": 34
   },
   {
-    "company": "Unknown",
-    "count": 17
+    "company": "KLM",
+    "count": 33
   },
   {
-    "company": "KIND GmbH & Co. KG",
-    "count": 14
-  },
-  {
-    "company": "We ARE Recruitment Group",
-    "count": 14
-  },
-  {
-    "company": "PricewaterhouseCoopers",
-    "count": 13
-  },
-  {
-    "company": "CGM",
-    "count": 12
-  },
-  {
-    "company": "FERCHAU GmbH",
-    "count": 12
-  },
-  {
-    "company": "CGI",
-    "count": 12
-  },
-  {
-    "company": "Lam Research",
-    "count": 10
-  },
-  {
-    "company": "AT&S Austria Technologie & Systemtechnik AG",
-    "count": 10
+    "company": "Bertelsmann",
+    "count": 32
   },
   {
     "company": "Roche",
-    "count": 10
+    "count": 30
   },
   {
-    "company": "Richemont",
-    "count": 10
+    "company": "Bosch",
+    "count": 30
   },
   {
-    "company": "CGI Nederland",
-    "count": 10
+    "company": "Sopra Steria",
+    "count": 30
   },
   {
-    "company": "Talent&Pro",
-    "count": 10
+    "company": "Fiserv",
+    "count": 29
   },
   {
-    "company": "Passion for People GmbH",
-    "count": 9
+    "company": "Nestle",
+    "count": 29
   },
   {
-    "company": "Blockstream",
-    "count": 9
+    "company": "Philips",
+    "count": 28
   },
   {
-    "company": "HENSOLDT",
-    "count": 8
+    "company": "UBS",
+    "count": 28
   },
   {
-    "company": "Gi Group Outsourcing Deutschland GmbH",
-    "count": 8
+    "company": "Voith",
+    "count": 27
   },
   {
-    "company": "Jobgether",
-    "count": 8
+    "company": "Heineken",
+    "count": 26
   },
   {
-    "company": "Bright Professionals",
-    "count": 8
+    "company": "T-Systems",
+    "count": 25
   },
   {
-    "company": "EIFFEL",
-    "count": 8
+    "company": "Erste Group",
+    "count": 24
+  },
+  {
+    "company": "Continental",
+    "count": 24
+  },
+  {
+    "company": "Munich Re",
+    "count": 24
+  },
+  {
+    "company": "Capgemini",
+    "count": 24
+  },
+  {
+    "company": "ING",
+    "count": 22
+  },
+  {
+    "company": "OMV",
+    "count": 22
+  },
+  {
+    "company": "ASML",
+    "count": 21
+  },
+  {
+    "company": "Siemens",
+    "count": 20
   }
 ]

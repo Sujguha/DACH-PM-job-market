@@ -57,6 +57,8 @@ ROLES = {
 RESULTS_PER_PAGE = 50  # Adzuna's max per page
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 REQUEST_PAUSE_SECONDS = 1.0  # be polite to the free tier
+MAX_RETRIES = 3
+HISTORY_MAX_ENTRIES = 90  # keep ~3 months of daily snapshots
 
 
 def fetch_page(country_code: str, what: str):
@@ -68,9 +70,23 @@ def fetch_page(country_code: str, what: str):
         "what": what,
         "content-type": "application/json",
     }
-    resp = requests.get(url, params=params, timeout=30)
-    resp.raise_for_status()
-    return resp.json().get("results", [])
+    last_exc = None
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            resp = requests.get(url, params=params, timeout=30)
+            if resp.status_code == 429:
+                wait = 5 * attempt
+                print(f"WARN: rate limited on {country_code}/{what}, waiting {wait}s (attempt {attempt})", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            return resp.json().get("results", [])
+        except requests.RequestException as exc:
+            last_exc = exc
+            wait = 2 * attempt
+            print(f"WARN: {country_code}/{what} attempt {attempt} failed: {exc}, retrying in {wait}s", file=sys.stderr)
+            time.sleep(wait)
+    raise last_exc if last_exc else RuntimeError(f"Failed to fetch {country_code}/{what} after {MAX_RETRIES} attempts")
 
 
 def days_open(created_iso: str) -> float:
@@ -105,13 +121,15 @@ def guess_job_type(job: dict) -> str:
 
 def main():
     postings_by_id = {}
+    failed_queries = 0
 
     for country_code, country_name in COUNTRIES.items():
         for keyword, role_label in ROLES.items():
             try:
                 results = fetch_page(country_code, keyword)
             except requests.RequestException as exc:
-                print(f"WARN: {country_code}/{keyword} failed: {exc}", file=sys.stderr)
+                print(f"ERROR: {country_code}/{keyword} failed after retries: {exc}", file=sys.stderr)
+                failed_queries += 1
                 continue
 
             for job in results:
@@ -142,7 +160,11 @@ def main():
                 }
             time.sleep(REQUEST_PAUSE_SECONDS)
 
-    write_outputs(list(postings_by_id.values()))
+    total_queries = len(COUNTRIES) * len(ROLES)
+    if failed_queries:
+        print(f"WARN: {failed_queries}/{total_queries} queries failed after retries", file=sys.stderr)
+
+    write_outputs(list(postings_by_id.values()), failed_queries, total_queries)
 
 
 def dict_count(items, field):
@@ -152,7 +174,7 @@ def dict_count(items, field):
     return dict(out)
 
 
-def write_outputs(postings):
+def write_outputs(postings, failed_queries=0, total_queries=0):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     now_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
@@ -164,6 +186,8 @@ def write_outputs(postings):
         "total_postings": len(postings),
         "by_country": dict(per_country),
         "roles_tracked": list(ROLES.values()),
+        "failed_queries": failed_queries,
+        "total_queries": total_queries,
     }
 
     role_groups = defaultdict(list)
@@ -226,6 +250,29 @@ def write_outputs(postings):
     _write("city_role.json", city_role)
     _write("by_company.json", by_company)
     _write("postings.json", postings_sorted)
+    _append_history(now_iso, len(postings), dict(per_country))
+
+
+def _append_history(now_iso: str, total: int, by_country: dict):
+    """Appends today's totals to history.json (one entry per day, so
+    re-running on the same day updates rather than duplicates)."""
+    path = DATA_DIR / "history.json"
+    history = []
+    if path.exists():
+        try:
+            history = json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            history = []
+
+    today = now_iso[:10]  # YYYY-MM-DD
+    entry = {"date": today, "total_postings": total, "by_country": by_country}
+    history = [h for h in history if h.get("date") != today]
+    history.append(entry)
+    history.sort(key=lambda h: h["date"])
+    history = history[-HISTORY_MAX_ENTRIES:]
+
+    path.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"wrote {path} ({len(history)} daily entries)")
 
 
 def _write(filename, data):
