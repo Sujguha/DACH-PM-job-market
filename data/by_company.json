@@ -1,7 +1,7 @@
 [
   {
     "company": "Job-Room",
-    "count": 122
+    "count": 129
   },
   {
     "company": "Synsel Techniek",
@@ -21,23 +21,19 @@
   },
   {
     "company": "Jobgether",
-    "count": 16
+    "count": 17
+  },
+  {
+    "company": "Unknown",
+    "count": 14
+  },
+  {
+    "company": "PricewaterhouseCoopers",
+    "count": 14
   },
   {
     "company": "We ARE Recruitment Group",
     "count": 14
-  },
-  {
-    "company": "Unknown",
-    "count": 13
-  },
-  {
-    "company": "PricewaterhouseCoopers",
-    "count": 12
-  },
-  {
-    "company": "Talent&Pro",
-    "count": 12
   },
   {
     "company": "FERCHAU GmbH",
@@ -45,6 +41,10 @@
   },
   {
     "company": "CGI",
+    "count": 11
+  },
+  {
+    "company": "Talent&Pro",
     "count": 11
   },
   {
@@ -76,18 +76,6 @@
     "count": 9
   },
   {
-    "company": "Bright Professionals",
-    "count": 9
-  },
-  {
-    "company": "NLwerkt",
-    "count": 9
-  },
-  {
-    "company": "HENSOLDT",
-    "count": 8
-  },
-  {
     "company": "Gi Group Outsourcing Deutschland GmbH",
     "count": 8
   },
@@ -98,5 +86,17 @@
   {
     "company": "EIFFEL",
     "count": 8
+  },
+  {
+    "company": "PLATH GmbH & Co. KG",
+    "count": 7
+  },
+  {
+    "company": "Redcare Pharmacy",
+    "count": 7
+  },
+  {
+    "company": "Accenture",
+    "count": 7
   }
 ]
