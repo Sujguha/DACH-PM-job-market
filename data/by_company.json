@@ -1,102 +1,102 @@
 [
   {
-    "company": "Job-Room",
-    "count": 129
+    "company": "Zurich Insurance",
+    "count": 39
   },
   {
-    "company": "Synsel Techniek",
-    "count": 56
+    "company": "BMW Group",
+    "count": 37
   },
   {
-    "company": "mycareernow GmbH",
-    "count": 25
+    "company": "Deutsche Bank",
+    "count": 36
   },
   {
-    "company": "Bjak",
-    "count": 21
+    "company": "Allianz",
+    "count": 35
   },
   {
-    "company": "ASML",
-    "count": 20
+    "company": "SAP",
+    "count": 34
   },
   {
-    "company": "Unknown",
-    "count": 15
+    "company": "KLM",
+    "count": 33
   },
   {
-    "company": "We ARE Recruitment Group",
-    "count": 15
-  },
-  {
-    "company": "PricewaterhouseCoopers",
-    "count": 14
-  },
-  {
-    "company": "HENSOLDT",
-    "count": 13
-  },
-  {
-    "company": "CGI",
-    "count": 13
-  },
-  {
-    "company": "KIND GmbH & Co. KG",
-    "count": 12
-  },
-  {
-    "company": "FERCHAU GmbH",
-    "count": 12
-  },
-  {
-    "company": "CGM",
-    "count": 10
-  },
-  {
-    "company": "Lam Research",
-    "count": 10
-  },
-  {
-    "company": "Richemont",
-    "count": 10
-  },
-  {
-    "company": "CGI Nederland",
-    "count": 10
-  },
-  {
-    "company": "Passion for People GmbH",
-    "count": 9
+    "company": "Bertelsmann",
+    "count": 32
   },
   {
     "company": "Roche",
-    "count": 9
+    "count": 30
   },
   {
-    "company": "Blockstream",
-    "count": 9
+    "company": "Bosch",
+    "count": 30
   },
   {
-    "company": "Bright Professionals",
-    "count": 9
+    "company": "Sopra Steria",
+    "count": 30
   },
   {
-    "company": "Gi Group Outsourcing Deutschland GmbH",
-    "count": 8
+    "company": "Fiserv",
+    "count": 29
   },
   {
-    "company": "AT&S Austria Technologie & Systemtechnik AG",
-    "count": 8
+    "company": "Nestle",
+    "count": 29
   },
   {
-    "company": "GE Vernova",
-    "count": 8
+    "company": "Philips",
+    "count": 28
   },
   {
-    "company": "EIFFEL",
-    "count": 8
+    "company": "UBS",
+    "count": 28
   },
   {
-    "company": "PLATH GmbH & Co. KG",
-    "count": 7
+    "company": "Voith",
+    "count": 27
+  },
+  {
+    "company": "Heineken",
+    "count": 26
+  },
+  {
+    "company": "T-Systems",
+    "count": 25
+  },
+  {
+    "company": "Erste Group",
+    "count": 24
+  },
+  {
+    "company": "Continental",
+    "count": 24
+  },
+  {
+    "company": "Munich Re",
+    "count": 24
+  },
+  {
+    "company": "Capgemini",
+    "count": 24
+  },
+  {
+    "company": "ING",
+    "count": 22
+  },
+  {
+    "company": "OMV",
+    "count": 22
+  },
+  {
+    "company": "ASML",
+    "count": 21
+  },
+  {
+    "company": "Siemens",
+    "count": 20
   }
 ]

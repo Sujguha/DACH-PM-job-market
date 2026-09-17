@@ -33,8 +33,14 @@ html, body {
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.55;
-  overflow-x: hidden;
   max-width: 100%;
+}
+
+/* Scoped to body only (not html) — iOS Safari has a known bug where
+   overflow-x:hidden on BOTH html and body blocks touch-scrolling on
+   nested scrollable elements (like the postings table) as a side effect. */
+body {
+  overflow-x: hidden;
 }
 
 a { color: var(--accent-signal); }
@@ -278,7 +284,12 @@ h2 {
 .chart-wrap { position: relative; height: 340px; }
 .chart-wrap-tall { height: 380px; }
 
-.table-panel { overflow-x: auto; padding: 0.5rem 1rem 1rem; }
+.table-panel {
+  overflow-x: auto;
+  padding: 0.5rem 1rem 1rem;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
+}
 .table-panel table { min-width: 480px; }
 
 /* ---------- Controls ---------- */
