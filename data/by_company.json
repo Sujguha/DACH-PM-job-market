@@ -1,15 +1,15 @@
 [
   {
     "company": "Job-Room",
-    "count": 129
+    "count": 127
   },
   {
     "company": "Synsel Techniek",
-    "count": 60
+    "count": 58
   },
   {
     "company": "mycareernow GmbH",
-    "count": 23
+    "count": 24
   },
   {
     "company": "Bjak",
@@ -21,19 +21,31 @@
   },
   {
     "company": "Jobgether",
-    "count": 17
+    "count": 16
   },
   {
     "company": "Unknown",
-    "count": 14
-  },
-  {
-    "company": "PricewaterhouseCoopers",
-    "count": 14
+    "count": 15
   },
   {
     "company": "We ARE Recruitment Group",
     "count": 14
+  },
+  {
+    "company": "PricewaterhouseCoopers",
+    "count": 13
+  },
+  {
+    "company": "Talent&Pro",
+    "count": 13
+  },
+  {
+    "company": "Scheidt & Bachmann Energy Retail Solutions GmbH",
+    "count": 11
+  },
+  {
+    "company": "KIND GmbH & Co. KG",
+    "count": 11
   },
   {
     "company": "FERCHAU GmbH",
@@ -44,15 +56,15 @@
     "count": 11
   },
   {
-    "company": "Talent&Pro",
-    "count": 11
-  },
-  {
-    "company": "KIND GmbH & Co. KG",
+    "company": "Lam Research",
     "count": 10
   },
   {
-    "company": "Lam Research",
+    "company": "Roche",
+    "count": 10
+  },
+  {
+    "company": "Ministerie van Defensie",
     "count": 10
   },
   {
@@ -60,11 +72,15 @@
     "count": 10
   },
   {
+    "company": "PLATH GmbH & Co. KG",
+    "count": 9
+  },
+  {
     "company": "Passion for People GmbH",
     "count": 9
   },
   {
-    "company": "Roche",
+    "company": "AT&S Austria Technologie & Systemtechnik AG",
     "count": 9
   },
   {
@@ -80,23 +96,7 @@
     "count": 8
   },
   {
-    "company": "AT&S Austria Technologie & Systemtechnik AG",
+    "company": "SThree Germany",
     "count": 8
-  },
-  {
-    "company": "EIFFEL",
-    "count": 8
-  },
-  {
-    "company": "PLATH GmbH & Co. KG",
-    "count": 7
-  },
-  {
-    "company": "Redcare Pharmacy",
-    "count": 7
-  },
-  {
-    "company": "Accenture",
-    "count": 7
   }
 ]
