@@ -1,15 +1,15 @@
 [
   {
     "company": "Job-Room",
-    "count": 128
+    "count": 131
   },
   {
     "company": "Synsel Techniek",
-    "count": 58
+    "count": 55
   },
   {
     "company": "mycareernow GmbH",
-    "count": 24
+    "count": 23
   },
   {
     "company": "Bjak",
@@ -21,34 +21,30 @@
   },
   {
     "company": "Jobgether",
-    "count": 16
-  },
-  {
-    "company": "Unknown",
-    "count": 15
-  },
-  {
-    "company": "PricewaterhouseCoopers",
-    "count": 15
-  },
-  {
-    "company": "We ARE Recruitment Group",
     "count": 14
   },
   {
-    "company": "Talent&Pro",
+    "company": "FERCHAU GmbH",
     "count": 13
   },
   {
     "company": "Scheidt & Bachmann Energy Retail Solutions GmbH",
-    "count": 11
+    "count": 12
   },
   {
-    "company": "KIND GmbH & Co. KG",
-    "count": 11
+    "company": "PricewaterhouseCoopers",
+    "count": 12
   },
   {
-    "company": "FERCHAU GmbH",
+    "company": "We ARE Recruitment Group",
+    "count": 12
+  },
+  {
+    "company": "Talent&Pro",
+    "count": 12
+  },
+  {
+    "company": "Lam Research",
     "count": 11
   },
   {
@@ -56,11 +52,15 @@
     "count": 11
   },
   {
-    "company": "Lam Research",
+    "company": "PLATH GmbH & Co. KG",
     "count": 10
   },
   {
-    "company": "Roche",
+    "company": "Unknown",
+    "count": 10
+  },
+  {
+    "company": "AT&S Austria Technologie & Systemtechnik AG",
     "count": 10
   },
   {
@@ -72,15 +72,7 @@
     "count": 10
   },
   {
-    "company": "PLATH GmbH & Co. KG",
-    "count": 9
-  },
-  {
     "company": "Passion for People GmbH",
-    "count": 9
-  },
-  {
-    "company": "AT&S Austria Technologie & Systemtechnik AG",
     "count": 9
   },
   {
@@ -92,11 +84,19 @@
     "count": 9
   },
   {
+    "company": "NLwerkt",
+    "count": 9
+  },
+  {
     "company": "Gi Group Outsourcing Deutschland GmbH",
     "count": 8
   },
   {
     "company": "SThree Germany",
+    "count": 8
+  },
+  {
+    "company": "Witron Service GmbH & Co. KG",
     "count": 8
   }
 ]
